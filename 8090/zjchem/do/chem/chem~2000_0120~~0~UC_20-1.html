@@ -1,0 +1,523 @@
+	<!DOCTYPE HTML>
+<html lang="zh-cn">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="../../st/chem/res/favicon.ico" type="image/x-icon">
+		<title>行业动态</title>
+	<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/jquery.event.swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-base_v1.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-core_v2.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/trade/account.js"></script>
+	<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/introduce.css"/>
+		<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!--头部-->
+
+			<div class="layout bg-gray header-top hidden-l">
+				<div class="container">
+					<div class="float-right other-link">
+						<a href="chem~3000_0020~~0.html%3Frollback_url=%252Fzjchem%252Fdo%252Fchem%252Fchem~3000_0070~~0~UC_10.html" class="text-gray">操作平台</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0090~~0~FO_40--.html" class="text-gray">帮助中心</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html" class="text-gray">english</a>
+					</div>
+					<div class="float-left">
+						<p class="welcome text-gray"><span id="Login_user" onclick="nameClick()"></span><span>您好，欢迎来到浙江省化工进出口有限公司</span>
+							<a href="chem~3000_0020~~0.html" class="text-primary">[登录]</a>
+							<a href="chem~3000_0010~~0~ZC_10.html" class="text-gray" id="register">[免费注册]</a>
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" id="logout">[退出]</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--logo区-->
+			<div class="layout padding-top padding-small-bottom boxshadow">
+				<div class="container header-wrap">
+					<div class="line padding-small-top padding-small-bottom hidden-l">
+						<div class="telphone float-right">
+							<!--<i class="icons-tel"></i><span>0571-967209</span>-->
+						</div>
+						<div class="m-search float-right clearfix margin-little-top">
+							<div class="search">
+								<input type="text" id="searchInput" placeholder="请输入订单号" class="search-text">
+							</div>
+							<button class="submit" id="submit" name="submit" onclick="search()"><i class="icons-search"></i></button>
+						</div>
+						<div class="logo float-left">
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" class="logo-bg" title="浙江省化工进出口有限公司"></a>
+						</div>
+						
+					</div>
+					<div class="header-mob hidden-m hidden-b hidden-s show-l">
+						<div class="leftmenu"><i class="icons-menu"></i></div>
+						<div class="title"><img src="../../st/chem/res/images/logo-mini.png" alt="" /></div>
+					</div>
+					<div class="fixedmenu clearfix">
+						<div class="nav absolute">
+							<ul class="text-center">
+							
+								<li >
+									<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0100~~0~UC_30-1.html">党政建设</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+									<!--<span>公司简介/董事长致辞/组织机构/发展历程/公司战略</span>-->
+								</li>
+								
+								<li >
+									<a style="cursor:pointer;" onClick="productOnLine()">产品在线</a>
+								</li>
+								
+								<!--<li  class="platform">
+									<a href="/zjchem/do/chem/chem~2000_0170~~0~UC_30-FO_60.html">外贸综合服务平台</a>
+									<span>通关/外汇/退税/物流/金融</span>
+								</li>-->
+								<li  class="platform">
+									<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+									<!--<span>人才理念/招贤纳士/培训体系/薪酬福利</span>-->
+								</li>
+								<li >
+									<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+								</li>
+								
+								<li class="join" >
+									<a href="chem~3000_0010~~0~ZC_10.html">注册</a>
+								</li>
+								<li class="login">
+									<a href="chem~3000_0020~~0.html">登录</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mask-layer"></div>
+					</div>
+				</div>
+			</div>
+				
+		<script type="text/javascript">
+
+			//showMenu();//手机页面显示导航
+			//loginPop();//手机页面点击登录出现提示框
+			/**
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+			**/
+			
+			var username=getCookie("username");
+			if(username!="undifined" && username!="" && username!= null){
+				$("#Login_user").text(username+" ");
+				$("#Login_user").attr("style","color:#FF7700;cursor:pointer");
+				$(".text-primary").attr("style","display:none");
+				$("#register").attr("style","display:none");
+				$("#logout").attr("style","display;color:#f66d5d");
+			}else{
+				$(".text-primary").attr("style","display");
+				$("#register").attr("style","display");
+				$("#logout").attr("style","display:none");
+			}
+			
+			function nameClick(){
+				if(username!="undifined" && username!=""){
+					//跳转到基本信息
+				}else{
+					//登录
+					window.location.href="/zjchem/do/chem/chem~3000_0020~~0.html";
+				}
+			}
+			
+			var logoutUrl="/zjchem/do/chem/chem~~chem_logout_z~0010~0.do";
+			$("#logout").click(function(){
+				$.ajax({
+					type : "POST",
+					async : false,
+					url : logoutUrl,
+					data : {
+						
+					},
+					global : false,
+					success : function(data, textStatus) {
+						if (data.RESULTCODE == "SUCCESS") {
+		                	clearCookie("username");
+		                } else {
+		                   return false;
+		                }
+					},
+					dataType : "json"
+				});
+			});
+			
+			function productOnLine(){
+				clearCookie("proName");
+				clearCookie("ocpath");
+				var prohref="/zjchem/do/chem/chem~2000_0210~~0~-1-.html";
+				window.location.href=encodeURI(prohref);
+			}
+			
+			//清除cookie    
+			function clearCookie(name) {    
+			    setCookie(name, "", -1);    
+			}  
+			
+			//设置cookie
+			function setCookie(c_name,value,expiredays){
+				var exdate=new Date()
+				exdate.setDate(exdate.getDate()+expiredays)
+				document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+			}
+			
+			function search(){
+				var olcode=$("#searchInput").val();
+				var searchPage="/zjchem/do/chem/chem~2000_0230~~0~"+olcode+".html";
+				if(olcode!=""){
+					window.location.href=encodeURI(searchPage);
+				}
+			}
+			
+			//获取cookie
+			function getCookie(c_name){
+				if (document.cookie.length>0){
+					c_start=document.cookie.indexOf(c_name + "=")
+					if (c_start!=-1){
+						c_start=c_start + c_name.length+1
+						c_end=document.cookie.indexOf(";",c_start)
+						if (c_end==-1) c_end=document.cookie.length
+						return unescape(document.cookie.substring(c_start,c_end))
+					}
+				}
+				return ""
+			}
+		</script>
+			<!--banner-->
+			<div class="content-home">
+				<!--banner-->
+				<div class="layout">
+					<div class="banner-hangyed"></div>
+				</div>
+				<div class="intr-wrap no-padding">
+				<!--面包屑-->
+				<div class="m-crumbs hidden-l">
+					<span>您当前的位置：首页></span><a href="chem~2000_0120~~0~UC_20-1.html">行业动态 </a>
+				</div>
+				<!--详情部分-->
+				<div class="line">
+					<div class="mob-side-menu hidden-s hidden-m hidden-b">
+						<div class="clearfix current">
+							<h4 class="title float-left">
+								<div class="zh">行业动态</div>
+								<div class="en">Trends</div>
+							</h4>
+						</div>
+					</div>
+					<div class="layout">
+						<div class="bg-context">
+							<h2 class="list-title">资讯列表</h2>
+							<ul class="news">
+								<li>
+									<a href="chem~2000_0130~~0~UCHI0010000000000000138.html">
+										<img width="200px" height="130px" src="chem~2000_0120~~0~UC_20-1.html" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">山东第四批化工园区名单出炉</h3>
+											<div class="txt">
+	6月27日，山东省人民政府办公厅印发《关于公布第四批化工园区和专业化工园区名单的通知》，公布了10家化工园区和3家专业化工园区，加上之前分3批公布的65家化工园区和7家专业化工园区，山东省共认定75家化工园区和10家专业化工园区。 
+
+
+	与此前公示的名单相比，此次公布的化工园区名单增加了山东裕龙石化产业园，公示的四家专业化工园区中，商河农药产业园区此次并未出现。 
+
+
+	据山东省化工专项行动办有关负责人介绍，经过近2年的工作，山东省化工园区和专业化工园区的认定工作全面完成，下一步，要把工作重点放在园区问题的整改提升上。 
+
+
+	
+	
+		
+	
+	
+		第四批化工园区和专业化工园区名单
+	
+
+
+
+	[图片] 
+
+
+	[图片] 
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-07-04 09:32:56</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0130~~0~UCHI0010000000000000068.html">
+										<img width="200px" height="130px" src="chem~2000_0120~~0~UC_20-1.html" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">10月我国外贸进出口增速均创新高</h3>
+											<div class="txt">&nbsp;&nbsp; &nbsp; 中国海关总署8日发布的最新外贸数据显示，10月，我国进出口总值2.75万亿元，增长22.9%。其中，出口1.49万亿元，增长20.1%；进口1.26万亿元，增长26.3%。专家表示，10月进出口增速创近期新高，为全年外贸稳增长打下了基础。随着首届中国国际进口博览会的举办以及一系列扩进口、促消费等措施落地，我国外贸进口有望持续保持两位数增长，出口则有望加速转型升级。
+&nbsp; &nbsp;“10月出口增速为过去8个月最高，进口增速创3个月新高。”交通银行金融研究中心首席经济学家连平表示，尽管存在不利外部因素，截至目前，对我国外贸影响仍较为有限。
+&nbsp; &nbsp; “四季度进口有望继续保持两位数增长。”连平认为，一是内需在政策推动下会保持增长，对原材料的进口需求将保持旺盛。二是短期内进口商品价格下跌的可能性较低，预计会继续维持较高价格。三是国内扩大进口的政策红利将进一步释放。这些因素将共同促进四季度进口继续平稳较快增长。
+&nbsp; &nbsp; &nbsp; 同日，在首届中国国际进口博览会上，中国轻工工艺品进出口商会发布的《中国日用消费品对外贸易报告（2017）》也显示，随着世界经济复苏，国际市场需求持续回暖，日用消费品进出口形势逐渐企稳向好。2017年全年，我国日用消费品进出口总额8097.3亿美元，同比增长15.5%，占全国进出口总额的19.7%。2017年出口额6076.8亿美元，进口额2020.5亿美元。从增速上来看，出口、进口贸易额同比增速分别为6.8%、53%，进口远超出口，贸易顺差持续缩小。
+&nbsp; &nbsp; &nbsp; &nbsp;对此，中国轻工工艺品进出口商会李文锋副会长接受采访时表示，我国陆续出台了一系列降税减费、优化口岸营商环境促进跨境贸易便利化等有效措施，有力促进了进口增长。在开放的市场环境下，出口有望加速转型升级的步伐，我国外贸结构也将得到优化。
+&nbsp; &nbsp; &nbsp; 本文转自[盖德化工网]
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2018-12-05 14:46:21</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0130~~0~UCHI0010000000000000046.html">
+										<img width="200px" height="130px" src="chem~2000_0120~~0~UC_20-1.html" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">9月官方制造业PMI比上月回落</h3>
+											<div class="txt">
+	&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;9月30日，国家统计局网站发布2018年9月中国采购经理指数运行情况显示，2018年9月份，中国制造业采购经理指数(PMI)为50.8%，比上月回落0.5个百分点，继续运行在景气区间，制造业总体延续扩张态势，增速有所放缓。据了解，这已经是官方制造业PMI连续26个月位于枯荣线上方。
+
+
+	　　从企业规模看，大型企业PMI为52.1%，与上月持平，连续位于扩张区间；中型企业PMI为48.7%，比上月下降1.7个百分点，落至收缩区间；小型企业PMI为50.4%，比上月上升0.4个百分点，位于临界点以上。
+
+
+	　　从分类指数看，在构成制造业PMI的5个分类指数中，生产指数和新订单指数高于临界点，原材料库存指数、从业人员指数和供应商配送时间指数低于临界点。
+
+
+	　　生产指数为53.0%，比上月回落0.3个百分点，继续位于临界点之上，表明制造业生产增速有所放缓。
+
+
+	　　新订单指数为52.0%，比上月回落0.2个百分点，但仍位于临界点之上，表明制造业市场需求扩张步伐有所放慢。
+
+
+	　　原材料库存指数为47.8%，比上月下降0.9个百分点，继续位于临界点之下，表明制造业主要原材料库存降幅有所扩大。
+
+
+	　　从业人员指数为48.3%，低于上月1.1个百分点，位于临界点以下，表明制造业企业用工量减少。
+
+
+	　　供应商配送时间指数为49.7%，比上月上升0.1个百分点，低于临界点，表明制造业原材料供应商交货时间继续放慢。
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2018-10-26 14:41:07</span></div>
+										</div>
+									</a>
+								</li>
+								
+							</ul>
+							<div class="pages hidden-l">
+	
+	
+	
+	
+	<div class="goto float-right">
+		到第<input id="skipPageNum" type="text" class="inputs"/>页 <input id="skip_page_btn" onclick="skipPage()" type="button" value="确定" class="submit"/>
+	</div>
+	<div class="total">共<em>1</em>页</div>
+	<ul class="clearfix">
+		<li class="prev"><a href="javascript:void(0)" onclick="lastPage()"><i class="icons-arr-l"></i></a></li>
+		
+			
+					<li class="cur"><a href="javascript:void(0)" onclick="clickPage(this)">1</a></li>
+		
+		
+		<li class="next"><a href="javascript:void(0)" onclick="nextPage()"><i class="icons-arr-r"></i></a></li>
+		
+	</div>
+	
+							<!--
+							<div class="goto float-right">
+								到第<input type="text" class="inputs"/>页 <input type="button" value="确定" class="submit"/>
+							</div>
+							<div class="total">共<em>67</em>页</div>
+							<ul class="clearfix">
+								<li class="prev"><a href="###">上一页</a></li>
+								<li><a href="###">1</a></li>
+								<li class="cur"><a href="###">2</a></li>
+								<li><a href="###">3</a></li>
+								<li><a href="###">4</a></li>
+								<li><a href="###">5</a></li>
+								<li class="next"><a href="###">下一页</a></li>
+							</ul>
+							-->
+						</div>
+							<div class="loading"><i class="icons-loading"></i><span>正在加载中</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- 尾部 -->
+				<!-- 尾部 -->
+			    <div class="layout g-footer">
+					<div class="container text-center footer-links">
+						<ul class="hidden-l clearfix">
+							<li>
+								<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0210~~0~-1-.html">产品在线</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+							</li>
+							
+						</ul>
+						<p class="hidden-l">
+							浙江省化工进出口有限公司 版权所有&copy;2017
+							<span>
+							<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010402003544"><i style="margin-right:3px;"><img src="../../st/chem/res/images/icons/beian.png"></i>浙公网安备 33010402003544号</a>
+							<a>工信部备案号      浙ICP备09087408号</a>
+							</span>
+						</p>
+						<p class="footer-mobi">工信部备案号      浙ICP备09087408号</p>
+						<p class="footer-mobi">浙江省化工进出口有限公司 版权所有&copy;2018</p>
+					</div>
+				</div>
+		<!--联系方式 end-->
+		<!--登录弹出框-->
+			<div class="login-cover">
+				<div class="login-cover-s">
+					<p>登陆~~请选择pc端进行登录</p>
+					<button>知道了</button>
+				</div>
+			</div>
+		<!--登录弹出框end-->
+		<script type="text/javascript">
+			
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+		</script>
+		</div>
+			<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+				
+			<!--联系方式-->
+<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+<div class="contact-way hidden-l">
+			<div class="item item-ewm"><i class="icons-ewm"></i><div class="ewm"><i class="arrowborder"></i><i class="shadowarrow"></i><img style="width:120px;height:120px" src="../../st/chem/res/images/temp/ewm.png"/></div></div>
+			<!--<div class="item item-qq" onclick="openQQ()"><div class="info"><h5 class="zh">在线服务咨询</h5><h6 class="en">ONLINE CONSULTION</h6></div><i class="icons-qq"></i></div>-->
+			<!--<div class="item"><i class="icons-email"></i></div>-->
+			<div class="item item-gotop"><i class="icons-top"></i></div>
+</div>
+
+<script type="text/javascript">
+	var getqq="/zjchem/do/chem/chem~~chem_openQQ~0010~0.do";
+	function openQQ(){
+	
+		$.ajax({
+			type:"POST",
+			async:false,
+			url:getqq,
+			data:{
+				
+			},
+			success:function(data,textStatus){
+					if(data.uqq!=""){
+						var url="tencent://message/?uin="+data.uqq+"&Site=qq&Menu=yes";
+						window.location.href=url;
+					}else{
+						//alert("暂未提供客服QQ,请拨打融易通客服热线：");
+					}
+			},
+			dataType:"json" 
+			});
+	}
+</script>			<!--联系方式 end-->
+		</div>	
+		<script type="text/javascript">
+
+			showMenu();//手机页面显示导航
+			loginPop();//手机页面点击登录出现提示框
+			loginPop();
+			goTopPC();
+			goTop();
+			//根据当前页面数控制【上一页】和【下一页】样式
+			var total = parseInt($(".total").find("em").text()); 
+			var curPage = parseInt($(".cur").find("a").text()); 
+			if(curPage == 1){
+				$(".prev").find("a").removeAttr("onclick");
+				//$(".prev").hide();
+			}
+			//else{
+			//	$(".prev").show();
+			//}
+			if(curPage == total){
+				$(".next").find("a").removeAttr("onclick");
+				//$(".next").hide();
+			}
+			//else{
+			//	$(".next").show();
+			//}
+			
+			//跳转到指定页
+			function skipPage(){
+				var skipPageNum = $("#skipPageNum").val();
+				var reg = /^-?([1-9]\d*|0(?!\.0+$))\.\d+?$/;
+				if(skipPageNum > total){
+					skipPageNum = total;
+				}else if(skipPageNum<1){
+					skipPageNum = 1;
+				}else if(reg.test(skipPageNum)){
+					return;
+				}else if(skipPageNum == "" || skipPageNum == null){
+					return;
+				}
+				window.location.href="/zjchem/do/chem/chem~2000_0120~~0~UC_20-"+skipPageNum+".html";
+			}
+			//点击指定页
+			function clickPage(e){
+				var skipPageNum = $(e).text();
+				window.location.href="/zjchem/do/chem/chem~2000_0120~~0~UC_20-"+skipPageNum+".html";
+			}
+			//上一页
+			function lastPage(){
+				skipPageNum = curPage-1
+				window.location.href="/zjchem/do/chem/chem~2000_0120~~0~UC_20-"+skipPageNum+".html";
+			}
+			//下一页
+			function nextPage(){
+				skipPageNum = curPage+1
+				window.location.href="/zjchem/do/chem/chem~2000_0120~~0~UC_20-"+skipPageNum+".html";
+			}
+		</script>
+	</body>
+
+</html>

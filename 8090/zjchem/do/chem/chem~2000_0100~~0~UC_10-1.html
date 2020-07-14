@@ -1,0 +1,950 @@
+	<!DOCTYPE HTML>
+<html lang="zh-cn">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="../../st/chem/res/favicon.ico" type="image/x-icon">
+		<title>企业新闻</title>
+	<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/jquery.event.swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-base_v1.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-core_v2.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/trade/account.js"></script>
+	<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/introduce.css"/>
+		<!--[if lt IE 9]>
+			<script src="js/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!--头部-->
+
+			<div class="layout bg-gray header-top hidden-l">
+				<div class="container">
+					<div class="float-right other-link">
+						<a href="chem~3000_0020~~0.html%3Frollback_url=%252Fzjchem%252Fdo%252Fchem%252Fchem~3000_0070~~0~UC_10.html" class="text-gray">操作平台</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0090~~0~FO_40--.html" class="text-gray">帮助中心</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html" class="text-gray">english</a>
+					</div>
+					<div class="float-left">
+						<p class="welcome text-gray"><span id="Login_user" onclick="nameClick()"></span><span>您好，欢迎来到浙江省化工进出口有限公司</span>
+							<a href="chem~3000_0020~~0.html" class="text-primary">[登录]</a>
+							<a href="chem~3000_0010~~0~ZC_10.html" class="text-gray" id="register">[免费注册]</a>
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" id="logout">[退出]</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--logo区-->
+			<div class="layout padding-top padding-small-bottom boxshadow">
+				<div class="container header-wrap">
+					<div class="line padding-small-top padding-small-bottom hidden-l">
+						<div class="telphone float-right">
+							<!--<i class="icons-tel"></i><span>0571-967209</span>-->
+						</div>
+						<div class="m-search float-right clearfix margin-little-top">
+							<div class="search">
+								<input type="text" id="searchInput" placeholder="请输入订单号" class="search-text">
+							</div>
+							<button class="submit" id="submit" name="submit" onclick="search()"><i class="icons-search"></i></button>
+						</div>
+						<div class="logo float-left">
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" class="logo-bg" title="浙江省化工进出口有限公司"></a>
+						</div>
+						
+					</div>
+					<div class="header-mob hidden-m hidden-b hidden-s show-l">
+						<div class="leftmenu"><i class="icons-menu"></i></div>
+						<div class="title"><img src="../../st/chem/res/images/logo-mini.png" alt="" /></div>
+					</div>
+					<div class="fixedmenu clearfix">
+						<div class="nav absolute">
+							<ul class="text-center">
+							
+								<li >
+									<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0100~~0~UC_30-1.html">党政建设</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+									<!--<span>公司简介/董事长致辞/组织机构/发展历程/公司战略</span>-->
+								</li>
+								
+								<li >
+									<a style="cursor:pointer;" onClick="productOnLine()">产品在线</a>
+								</li>
+								
+								<!--<li  class="platform">
+									<a href="/zjchem/do/chem/chem~2000_0170~~0~UC_30-FO_60.html">外贸综合服务平台</a>
+									<span>通关/外汇/退税/物流/金融</span>
+								</li>-->
+								<li  class="platform">
+									<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+									<!--<span>人才理念/招贤纳士/培训体系/薪酬福利</span>-->
+								</li>
+								<li >
+									<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+								</li>
+								
+								<li class="join" >
+									<a href="chem~3000_0010~~0~ZC_10.html">注册</a>
+								</li>
+								<li class="login">
+									<a href="chem~3000_0020~~0.html">登录</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mask-layer"></div>
+					</div>
+				</div>
+			</div>
+				
+		<script type="text/javascript">
+
+			//showMenu();//手机页面显示导航
+			//loginPop();//手机页面点击登录出现提示框
+			/**
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+			**/
+			
+			var username=getCookie("username");
+			if(username!="undifined" && username!="" && username!= null){
+				$("#Login_user").text(username+" ");
+				$("#Login_user").attr("style","color:#FF7700;cursor:pointer");
+				$(".text-primary").attr("style","display:none");
+				$("#register").attr("style","display:none");
+				$("#logout").attr("style","display;color:#f66d5d");
+			}else{
+				$(".text-primary").attr("style","display");
+				$("#register").attr("style","display");
+				$("#logout").attr("style","display:none");
+			}
+			
+			function nameClick(){
+				if(username!="undifined" && username!=""){
+					//跳转到基本信息
+				}else{
+					//登录
+					window.location.href="/zjchem/do/chem/chem~3000_0020~~0.html";
+				}
+			}
+			
+			var logoutUrl="/zjchem/do/chem/chem~~chem_logout_z~0010~0.do";
+			$("#logout").click(function(){
+				$.ajax({
+					type : "POST",
+					async : false,
+					url : logoutUrl,
+					data : {
+						
+					},
+					global : false,
+					success : function(data, textStatus) {
+						if (data.RESULTCODE == "SUCCESS") {
+		                	clearCookie("username");
+		                } else {
+		                   return false;
+		                }
+					},
+					dataType : "json"
+				});
+			});
+			
+			function productOnLine(){
+				clearCookie("proName");
+				clearCookie("ocpath");
+				var prohref="/zjchem/do/chem/chem~2000_0210~~0~-1-.html";
+				window.location.href=encodeURI(prohref);
+			}
+			
+			//清除cookie    
+			function clearCookie(name) {    
+			    setCookie(name, "", -1);    
+			}  
+			
+			//设置cookie
+			function setCookie(c_name,value,expiredays){
+				var exdate=new Date()
+				exdate.setDate(exdate.getDate()+expiredays)
+				document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+			}
+			
+			function search(){
+				var olcode=$("#searchInput").val();
+				var searchPage="/zjchem/do/chem/chem~2000_0230~~0~"+olcode+".html";
+				if(olcode!=""){
+					window.location.href=encodeURI(searchPage);
+				}
+			}
+			
+			//获取cookie
+			function getCookie(c_name){
+				if (document.cookie.length>0){
+					c_start=document.cookie.indexOf(c_name + "=")
+					if (c_start!=-1){
+						c_start=c_start + c_name.length+1
+						c_end=document.cookie.indexOf(";",c_start)
+						if (c_end==-1) c_end=document.cookie.length
+						return unescape(document.cookie.substring(c_start,c_end))
+					}
+				}
+				return ""
+			}
+		</script>
+			</div>
+				<!--banner-->
+			<div class="content-home">
+				<!--banner-->
+				<div class="layout">
+					<div class="banner-news"><div class="banner-text">企业新闻</div></div>
+				</div>
+				<div class="intr-wrap no-padding">
+				<!--面包屑-->
+				<div class="m-crumbs hidden-l">
+					<span>您当前的位置：首页></span><a href="chem~2000_0100~~0~UC_10-1.html">企业新闻</a>
+				</div>
+				<!--详情部分-->
+				<div class="line">
+					<div class="mob-side-menu hidden-s hidden-m hidden-b">
+						<div class="clearfix current">
+							<h4 class="title float-left">
+								<div class="zh">企业新闻</div>
+								<div class="en">NEWS</div>
+							</h4>
+						</div>
+					</div>
+					<div class="layout">
+						<div class="bg-context">
+							<h2 class="list-title">资讯列表</h2>
+							<ul class="news">
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000141.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/D1/55/FB/D155FB2CA55C1EACEA4C608110406B0B" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">【化工分享家】浙江化工开展定制化学品业务分享</h3>
+											<div class="txt">[图片] 
+
+	7月18日，“化工分享家”第6期在公司17楼会议室举行。本次分享会，公司邀请添加剂部副经理周晓华作为内训师主讲，主题为“定制化学品业务分享”，各业务部门、相关职能部门同事参加。 
+
+
+	周老师在化学品定制方面积累了多年的实践经验，他向大家分享了全球化工行业数据、定制化学品产品业务的特点、外贸公司的优势及国内外贸易形势等，并与大家交流了化学品定制的风险控制、产品筛选及如何提高成功率等问题，现场互动氛围热烈。 
+
+
+	通过本次分享，公司希望能有更多的同事参与进来，形成团队合力，共同探索未来外贸业务发展方向，打造外贸新优势，促进公司转型升级与“5144”战略规划的落地。 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-07-19</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000142.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/66/A5/62/66A562F624BD268ED3C71FBD4316FAE4" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">用青春点亮未来</h3>
+											<div class="txt">
+	炎炎夏日，如骄阳般火热的正是多彩的青春。7月18日上午，历时两天半的浙江化工“萃取计划”夏令营圆满结束。 
+
+
+	本次夏令营活动内容丰富，形式多样，通过商务礼仪、职业发展、面试技巧、业务知识等系列课程学习，在校大学生们系统了解了初入职场应具备的基本技能，同时对公司发展历程、企业文化有了深入的了解。 
+
+
+	除课程的学习外，本次夏令营还增加了许多趣味性的内容： 
+
+
+	一是与学长学姐的面对面交流。在轻松愉快的气氛下，学生们收获了前辈们宝贵的经验，也对未来的职业发展更有方向和信心。 
+
+
+	[图片][图片]
+ 
+
+
+	二是进行了情景模拟面试。这也是学生们最期待的环节，其中在无领导小组的讨论中，大家针对“中美贸易战”这一主题展开激烈讨论，通过陈述和讨论，使自身的组织协调能力、口头表达能力都得到了很好的锻炼。 
+
+
+	[图片][图片]
+ 
+
+
+	 
+
+
+	三是安排了团队拓展活动。夏令营最后半天，学生们分为两组由专业教练带队进行各类项目的比拼，最终红队获得胜利。比赛的结果不是最重要的，重要的是，在这个过程中，加深了彼此的友谊，增强了团队协作的意识。 
+
+
+	[图片][图片]
+ 
+
+
+	夏令营的结业仪式上，公司党委副书记、纪委书记、工会主席方立还为全体学员颁发了结业证书，为夏令营活动画上了完美的句号。 
+
+
+	本次“萃取计划”夏令营活动，得到了公司领导的大力支持，以及各大高校的积极配合。 
+
+
+	通过活动，学生们提前体验了职场氛围，为今后走上工作岗位奠定了坚实的基础；同时对公司来说，也推广了雇主品牌，为公司的转型升级与高质量发展提前做好人才储备。 
+
+
+	
+ 
+
+
+	 
+
+
+	 
+
+
+	&nbsp;&nbsp; 学生感悟 
+
+
+	[图片]
+ 
+
+
+	 
+
+
+	白伟杰：虽然时间只有短短的两天半，我们彼此从陌生到熟悉，可能就是一个眼神使然。因为对于我们自身而言，我们是志同道合之士，我们怀着相同的目标，把最好的自己展示给公司与大家，同时也是一个相互学习、互补的过程。 
+
+
+	夏令营的目的就在于培养我们步入职场以后的交流与生存技能，礼仪课程让我学习到，交流、眼神都是职场中必不可少的因素。对于我们还未踏入职场的萌新而言，我们以前对于这些几乎是一无所知，所以参加本次活动，我的宗旨就是把自己当做一张白纸，空手而来。满载而归。但中国有句古话“来而不往非礼也”，参与这次活动，公司交给我们许多新的技能与方法，我也应以认真学习的态度来匹配公司为我做的一切。 
+
+
+	或许在座的各位经过这次夏令营活动以后，在未来都不会再有任何的交际，但是我想说的是，与其花费精力在考虑未来上，远不如认真做好当下，完善自己。 
+
+
+	陈黎群：非常感恩有这个机会来参加这次夏令营。每个小伙伴都从不适应到适应，互相了解，在团队合作中，思维更是碰撞出不一样的火花。在整个过程中，我上到最重要的一颗是社会责任感。工作不仅是为了谋利，更是为了服务社会、造福社会。未来不管从事着什么样的工作，我们都应该承担起这份责任来。 
+
+
+	庞栋梁：本次夏令营活动安排周密、内容丰富多彩，保障也十分有利。丁经理给我们带来的商务礼仪课程，很多与我之前在部队锻炼时学到的感同身受。以及后面诸老师与我们分享的员工发展方面的内容，也让我对国有企业有了一定的了解。从中我学到了很多、成长了很多。希望在未来的时间中，有能够加入浙化工的机会，为社会做出贡献。 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-07-19</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000139.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/E6/60/B0/E660B013BC6CFEABA5076212176A2103" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江化工“萃取计划”夏令营正式启动</h3>
+											<div class="txt">[图片] 
+
+	7月16日，浙江化工“萃取计划”夏令营正式开启，来自七所高校的16名在校参加此次活动。浙江化工党委副书记、纪委书记、工会主席方立出席开营仪式并致辞。 
+
+
+	方书记指出，2019年是浙江化工管理提升年，也是雇主品牌建设年，“萃取计划”夏令营是雇主品牌建设中的一个重要组成部分。通过夏令营，可以让学生提前体验职场氛围，为将来的就业打下良好的基础。 
+
+
+	方书记还寄语各位学员，今后的学习与工作中，发挥自己的聪明才智，用新思维和创造力，为企业注入源源不断的动力，成为国家与社会的栋梁！ 
+
+
+	开营仪式后，学员们在人力资源部的组织下，开展了生动有趣的破冰活动，听取了关于浙江化工发展历程与企业文化的介绍，并参观了公司办公环境。 
+
+
+	下午的夏令营活动，主要内容为人力资源相关知识与技巧的分享，包括商务礼仪、职业发展以及大学生招聘求职技巧等三方面。 
+
+
+	举办“萃取计划”夏令营活动，是浙江化工重视人才、以人为本的体现。 
+
+在近四十年的发展历程中，浙江化工始终坚持“人才兴企”的发展战略，尊重知识、尊重人才，为员工提供干事创业的平台，让每一位员工在浙江化工成长、成才，有幸福感、获得感、归属感。</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-07-16</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000137.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/6D/78/04/6D78045C568325860F95E0A31E3D9A98" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江省化工进出口有限公司 2019暑期夏令营“萃取计划”正式启动</h3>
+											<div class="txt">
+	为给在校学生提供零距离接触国际贸易行业、提升专业认知与了解杭州这个著名风景旅游城市的机会，省国贸集团旗下浙江省化工进出口有限公司将于2019年7月中下旬在公司开展2019优秀在校生暑期夏令营活动暨“萃取计划”。 
+
+
+	浙江化工近年来发展迅速，对人才的渴望也越来越迫切，我们已将大学生的招募与培养作为公司人才输入的主要途径和手段。 
+
+
+	“萃取计划”就是通过夏令营这样的方式，为大学生提供一次社会实践与职场体验的机会，了解企业、了解行业、了解职业，为将来的就业做好准备。  
+
+
+	浙江化工2019暑期夏令营“萃取计划”正式启动，现面向优秀在校生报名啦！热忱欢迎各高校优秀在校生前来咨询、参与、体验。  
+
+
+	美丽杭州欢迎您！魅力zhechem欢迎您！
+
+
+	【活动内容】 
+
+
+	1.了解浙江化工发展史以及企业文化等 
+
+
+	2.与学长学姐交流，学习新人成长经验 
+
+
+	3.业务流程、商务礼仪等课程，加强专业知识 
+
+
+	4.模拟面试，专业面试官点评，提高应试技巧 
+
+
+	5.团队建设活动，提升综合素质 
+
+
+	【参加流程】 
+
+
+	报名时间：7月3日—7月10日 
+
+
+	报名邮箱：caozhu@zhejiangchemicals.com 
+
+
+	报名主题格式：浙江化工【夏令营】-学校-姓名（附简历） 
+
+
+	【时间地点】 
+
+
+	正式入营: 7月16日上午9点 
+
+
+	活动时间：2.5天（7月16日-7月18日） 
+
+
+	活动地点：杭州 
+
+
+	【其他事宜】 
+
+
+	1. 保险：在出行和入营期间我们会为大家购买一份保 
+
+
+	2. 实习：每位入营的同学都将获得浙江化工实习机会 
+
+
+	3. 发展：表现优秀的同学将进入公司人才库 
+
+
+	这里可以学习，也可以收获友情，所以请你尽情地参与到这次活动中来吧！ 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-07-03</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000133.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/DB/8E/43/DB8E4358D5CB3A63A74ED5378099F8F8" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江省化工进出口有限公司举行财务知识分享培训</h3>
+											<div class="txt">
+	[图片]6月25日，“化工分享家”之圆桌会议第三期在公司17楼会议室举行。本次分享会由财务部副经理姚星星作为内训师主讲，主题为“贯穿业务的财务知识分享”。
+
+
+	姚老师结合自己在内部银行、核算、税务、资金等各岗位工作的经验，对业务相关的各类财务知识向学员做讲解，包括：操作流程、报表解读、税务风险等。在分享知识的同时，姚老师也希望大家在工作中时常关注财务部发布的各类制度、通知，保持有效沟通。
+
+
+	党委书记、董事长颜雷翔及党委副书记、纪委书记、工会主席方立参训并分别对本次培训做了总结。
+
+
+	两位领导首先肯定了公司员工积极参加培训学习的热情，同时也指出对财务知识的学习不应局限于课堂，各业务部门应及时与财务部保持沟通交流，共同推动业务高质量发展与优化改革方案的平稳落地。
+
+
+	党委委员、副总经理马岚，总经理助理孙伟祖，业务运营总监黄颖波及各部门同事参加本期培训。
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-06-26</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000132.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/DE/D3/C1/DED3C1EEAEA8F7EB7CE3FECF987D36CE" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江省化工进出口有限公司召开 “不忘初心、牢记使命”主题教育工作会议</h3>
+											<div class="txt">
+	[图片]为深入贯彻落实中央、省委、集团党委“不忘初心、牢记使命”主题教育工作会议精神，6月20日下午，浙江省化工进出口有限公司召开“不忘初心、牢记使命”主题教育工作会议。 
+
+
+	公司党委书记、董事长颜雷翔在主题教育工作会议上作动员讲话，他代表浙江省化工进出口有限公司党委对此次主题教育提出三点意见： 
+
+
+	一要统一思想，提高站位，充分认识这次开展主题教育的重大意义。开展这次主题教育，是深化习近平新时代中国特色社会主义思想理论武装的迫切需要；是推进新时代党的建设的必然选择；是实现公司高质量发展、建设一流企业的内在需求。 
+
+
+	二是对照要求，联系实际，争当新时代集团锻造一流政治素质的排头兵的姿态推动公司主题教育走深走实。要坚持系统思维，统筹谋划推进，确保上下联动、左右衔接；要彰显化工特色，创新方式方法，确保目标实现、走在前列；要突出问题导向，认真检视反思，确保深挖问题、找准根源。要强化成果运用，助推企业发展，确保落实落地、走深走实。[图片] 
+
+
+	三是强化领导，周密部署，确保高质量推进主题教育。要强化组织领导；要坚持领导带头，进一步加强领导班子自身建设；要注重宣传引导。 
+
+
+	集团第三巡回指导组组长、国贸集团党委巡察办公室主任张进智同志对浙江省化工进出口有限公司党委开展此次主题教育活动提出了三个方面的要求：一要聚焦根本任务，悟出初心，准确把握主题教育的目标要求；二要坚持问题导向，找差距有作为，切实解决公司改革发展问题；三要力戒形式主义，担使命抓落实，确保主题教育取得实际效果。 
+
+
+	最后，党委副书记、纪委书记方立同志指出公司主题教育的扎实开展要按照工作计划安排，细分项目、科学统筹、挂图作战、扎实推进。公司各支部要积极配合，全体党员要积极参与，高标准、高质量地完成这次主题教育活动。 
+
+
+	省国贸集团第三巡回指导组成员、浙江省化工进出口有限公司领导班子成员及全体党员参加会议。 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-06-20</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000131.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/B6/2B/22/B62B22CA82AF94BAD6A96C0268F1EAB9" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">我司赴上海参加第19届世界制药原料 中国展（CPHI CHINA）</h3>
+											<div class="txt">
+	 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[图片]2019年6月18日—6月20日，第19届世界制药原料中国展（CPHI CHINA）在上海新国际博览中心举行。浙江省化工进出口有限公司由董事长颜雷翔、总经理王芬、副总经理张辛携精化部、医化部、化工品部、添加剂部、农化部等业务骨干参加此次展会。摊位号E1B01、E3B02，主要参展产品有兽药，添加剂，原料药，中间体等产品。 
+
+
+	本届展会展出面积达20万平方米，再创新高。3200余家国内外制药企业精彩亮相，还特别迎来了韩国、印度、俄罗斯、土耳其、波兰五个国家馆。预计为期3天的展会将有来自120多个国家和地区的7万余名专业观众到会。 
+
+
+	展会仍在进行中，浙江省化工进出口有限公司展位欢迎您前来洽谈！ 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-06-19</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000130.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/4A/12/C6/4A12C63ED5199A2D55C0B589436637DE" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江省化工进出口有限公司荣获“2019年医药国际化100强企业评选——国际市场优质供应商与合作伙伴”</h3>
+											<div class="txt">
+	2019年6月17日，中国医药保健品进出口商会在第19届世界制药原料中国展开幕之际，开展了题为“三十载艰苦创业，新时代砥砺前行”的30周年庆典活动。浙江省化工进出口有限公司作为医保商会副会长单位受邀参加此次活动。 
+
+
+	本次庆典活动上，我司荣获“2019年医药国际化100强企业评选——国际市场优质供应商与合作伙伴”以及“中国医药保健品进出口商会成立30周年卓越贡献企业”。近年来，我司不断加强自身优势，向国际市场供应高品质产品，与跨国药企建立了长期、稳定的合作关系，成为中国医药产业链重要一环。获此殊荣，我司将仍会不忘初心，砥砺前行！ 
+
+
+	[图片]
+ 
+
+
+	总经理王芬代表公司领奖 
+
+
+	[图片][图片]
+
+
+
+
+	
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-06-18</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000129.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/1D/3E/A1/1D3EA1DAEDA696BC69E96793F860DB75" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江省化工进出口有限公司 举行2019年资产配置方向讲座</h3>
+											<div class="txt">
+	6月12日下午，“化工大讲堂”2019年度首期培训在公司17楼会议室举行。
+
+
+	本期培训，公司邀请国贸集团旗下浙江般若资产管理有限公司杭州第一财富中心总经理关新强进行授课，主题为《2019年资产配置方向》，课程受到公司各部门同事的积极参与，现场座无虚席。
+
+
+	[图片][图片]
+
+
+
+	关老师结合投资案例及大数据分析，向大家分享了各类资产配置方向的适用性与风险点，帮助公司员工初步搭建理财知识架构，尽可能规避爆雷、踩雷风险。
+
+
+	2019年，公司将依托“1234”培训品牌体系，发挥好“化工大讲堂”这个平台，打造外贸行业一流的学习型组织，为公司实现“5144”战略规划提供源动力。
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-06-14</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000128.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/99/2D/A5/992DA5984B03E8CE67FE95A71B484935" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江化工开展“安全生产月”活动</h3>
+											<div class="txt">
+	[图片]为深入贯彻落实《国务院安委会办公室关于开展“防风险保平安迎大庆”消防安全执法检查专项行动的通知》、浙江省安全生产委员会办公室关于印发《2019年浙江省“安全生产月”和“安全生产万里行”活动方案的通知》的文件精神，并根据省国贸集团关于“安全生产月”的工作部署，浙江化工认真学习、深入落实，部署了公司的安全宣传教育和检查工作，将安全生产主体责任落实到位。
+
+
+	6月3日中午，浙江化工由董事长颜雷翔亲自带队，公司领导班子及安全生产负责人对庆春路37号（已出租）的安全生产情况进行巡查，主要就消防安全隐患进行了详细询问和排查，颜董表示庆春路37号承租方的安全生产工作比较到位，但不能松懈安全意识，要时刻将安全生产工作落实下去，浙江化工会不定期抽查安全生产情况，并督促庆春路37号承租方对安全生产工作要常抓不懈。
+
+
+	当天下午，颜董一行对公司办公大楼进行安全生产大排查工作，通过此次排查活动，进一步督促各部室做好安全生产工作，确保安全经营。
+
+
+	6月4日上午，董事长颜雷翔，安全生产分管领导、纪委书记方立，安全生产负责人以及安全生产管理员一行参加省国贸集团在浙江英特物流有限公司开展的“安全生产月”启动仪式，集团领导详细地部署了“安全生产月”的活动方案，强调安全生产的重要性。
+
+
+	启动仪式结束后，由安全生产管理员参加了在浙江英特物流有限公司开展的消防安全专项培训，通过培训，确保将各项安全生产工作落实到实处。
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-06-04</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000127.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/DF/0F/50/DF0F50245C2EC14A13FAF951A67854B3" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江省化工进出口有限公司开展储运单证实务操作及法规培训</h3>
+											<div class="txt">
+	[图片] 
+
+
+	5月29日，“化工分享家”制度宣贯第二期培训在公司17楼会议室举行。本期宣贯主题为“储运单证实务操作及法规培训”，由储运单证部主管吴哲及陆晓颖担任内训师，分别主讲运输和单证两项内容。公司党委副书记、纪委书记方立，公司党委委员、副总经理张辛，党委委员、副总经理马岚及各业务部门同事参加培训。 
+
+
+	内训师吴哲及陆晓颖根据自身多年工作经验的累积，分别就运输和单证的业务实操内容和相关制度做了详细的解析，并向大家重点传达以下两点内容：一、储运单证部与业务部应共同努力，从源头上减少差错，使储运和单证的支持工作更高效；二、牢记几个操作风险点，杜绝不合规事件的发生。 
+
+
+	培训结束，公司党委委员、副总经理张辛代表领导班子做总结讲话。张总首先肯定了各部门员工参加培训的积极态度；其次强调培训的意义不仅仅是学习课程知识，更要通过讨论与交流，获得宝贵的经验；最后他希望大家擦出思维的火花，不断改进工作绩效，从而促进公司高质量发展。 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-05-31 16:09:48</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000125.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/77/8D/0F/778D0F77D9E47635F0F42C72B835110D" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江化工开展2019年度首期商务支持专项培训</h3>
+											<div class="txt">
+	5月15日，浙江化工迎来了2019年度第一批商务支持新人报到，商务支持专项培训正式启动开班典礼，开启为期约1个月的理论、实操培训与轮动实习。 
+
+
+	[图片]
+ 
+
+
+	第一阶段：走进浙江化工。本阶段，非商务支持新员工也一并参与。学员们先后学习了公司发展历程、规章制度、薪酬福利、职业发展、商务礼仪等基本内容，短短几天时间，大家从陌生到熟悉，从个人学习到彼此紧密联系，收获了思考、惊喜和感动。 
+
+
+	[图片]
+ 
+
+
+	公司党委副书记、纪委书记方立代表领导班子主持《高管面对面》： 
+
+
+	[图片]
+ 
+
+
+	方书记寄语新人，希望他们在下一阶段培训及未来的工作中能够多学、多看、多做，多交流，通过不断的实践提升自身能力。此外，他还督促新人们应坚持廉洁从业，严守职业道德底线。 
+
+
+	[图片]
+ 
+
+
+	第二阶段：商务支持实操技能培训。本阶段由公司党委委员、副总经理马岚以及来自各职能部门的10余位内训师分别为新人讲解了合同制定、托单等操作细则及注意事项。通过系统演练、现场模拟、“老人”分享等方式，使学员们对商务支持的具体工作内容有了更进一步的了解。 
+
+
+	[图片]
+ 
+
+
+	[图片]
+ 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三阶段：轮动实习。在前两个阶段的培训结束后，公司将组织商务支持新人分批到各业务部门及相关职能部门进行实习，通过实习，了解各部门的业务运行状况，在辅导老师的指导下尽快熟悉工作。</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-05-29</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000126.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/11/11/18/1111183F7477EEADDDF8DDFE8439A656" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">高墙转身一刹那，是无尽的悔恨</h3>
+											<div class="txt">
+	[图片]为了深化以案为鉴、以案促改，教育引导党员干部进一步加强党性修养，坚定理想信念，进一步增强“四个意识”，坚定“四个自信”，做到“两个维护”，使警示教育的过程成为党员干部校准思想之标、调整航行之舵、扎牢制度之笼的过程，真正做到明大德、守公德、严私德，真正做到公正用权、谨慎用权、干净用权，营造风清气正的政治生态、崇廉尚洁的营商环境。浙江化工党委于2019年5月28日组织全体党员及中层干部前往浙江省女子监狱参观，开展警示教育。
+
+
+	通过严格的资格审查和安检后，我们在公司党委书记颜雷翔的带领下列队，依次推开了那扇沉重且狭小的入闸转门，进入了神秘的高墙里。女子监狱向我们展示了以丝绸文化为主题的教育陈列馆，展示出芳华女子误入歧途锒铛入狱，接受改造破茧成蝶的历程。她们有的在狱中通过自学考试完成59门课程的学习，有的从书法绘画零基础学起如今已能展示出技艺高超的作品，有的跟着刺绣大师学艺已成为屡获国际大奖的技术能手。我们看到的监内景象是有着良好的居住环境、人性化的作息制度和充满温情的画面，有的员工不禁感慨这与我们想象中冰冷阴森地狱般的监狱完全不同啊。狱警告诉我们虽然她们是犯人，但是人权是我们国家对犯人的基本保障，虽然生活条件并不艰苦，但她们失去的是最宝贵的自由！是啊，再美的蝴蝶飞不出这高墙又如何感受的到鲜花草地的芬芳，只有当失去的时候才会倍感自由的可贵。
+
+
+	参观完陈列馆，我们来到五楼的会议大厅接受警示教育。让我们感到意外的是这次的警示教育并不是播放影片，而是由改造人员组成的艺术团精心编排了一场洗涤心灵的演出。看着舞台上那些年轻美丽的脸庞很难和罪犯联想到一起，可事实却很残酷的告诉我们犯罪与性别年龄职业学历统统无关，每个人都可能因为一失足成千古恨。最让人记忆深刻的是两位现身说法的服刑人员，她们用自己的亲身经历来警醒世人。一位曾经是电视台广告部主任，一位是区房管部门的副处级干部，她们从小表现优异是家人的骄傲、家庭幸福美满、工作勤奋事业有成，是始终生活在光环下的女强人。最终都没能挡住诱惑，因为贪污、受贿成了阶下囚，昔日的幸福生活转瞬间成了人间悲剧，不能服侍双亲同时也毁了丈夫孩子的前途。从谈吐间能感受到她们昔日站在台上的风采，但已物是人非，也许曾经她们在台上与人谈理想谈未来，如今却只能回忆逝去的美好诉说无尽的悔恨。坐在台下的我们，陷入鸦雀无声的沉思中，如果不守住底线不树立红线意识，给自己和家人将会带来何种灾难，因此遵纪守法是我们必须始终牢记的准则。
+
+
+	最后，公司党委副书记、纪委书记方立在现场给全体党员干部上了一堂党风廉政建设专题党课《从巡察工作谈加强企业的党风廉政建设工作》。结合公司实际从党建、纪检监察、选人用人到财务收支等方面阐述纪检工作要点，号召全体党员干部持之以恒贯彻习近平新时代中国特色社会主义思想，压实责任全面从严治党，进一步推进党风廉政建设工作，打造清廉国贸，创建清廉国企。
+
+
+	通过本次警示教育基地参观活动，广大党员干部进一步提高了思想认识。不忘初心，牢记使命，从开展岗位廉洁风险排查、落实党风廉政建设责任做起，为创建清廉国企、打造高质量企业贡献更大的力量，争取以优异的成绩向祖国七十周年华诞献礼。
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-05-29</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000124.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/0D/22/DB/0D22DBC202F323413E8FF44C51DE0708" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江化工开展“涵养清廉文化，打造清廉国贸” 书法作品征集活动</h3>
+											<div class="txt">
+	为全面贯彻落实党中央、中央纪委和省委、纪委要求，扎实推进全面从严治党向纵深发展，促进党员干部廉洁从业，根据国贸集团深入开展警示教育月活动的通知精神，浙江化工近日开展了“涵养清廉文化，打造清廉国贸”为主题的清廉文化创建活动。5月22日公司开展了以廉洁从业为主题的书法作品征集，通过现场书法技艺展示、提交参赛作品、微信渠道作品赏析等方式广泛宣传，树立清风、弘扬正气。 
+
+
+	虽然大家的书法技艺有高低，但通过一笔一划认真写“廉”，逐字逐句读“廉”，将廉洁清风吹到每位员工心里的效果是一样。现场书写古诗词唤起了大家重拾中国传统文化的热情，有的员工回家与家人一同找廉洁题材的诗词，与孩子一同书写作品，在传播廉洁文化的同时也增进了与家庭成员的交流，传递出幸福国贸的气息。 
+
+
+	随着警示教育大会的召开、观看警示教育专题片、微信送廉、书画育廉等系列活动的开展，涵养清廉文化，打造清廉国贸的理念正在浙江化工生根开花。 
+
+
+	[图片][图片][图片]
+ 
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-05-27 16:48:13</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000123.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/F9/84/9F/F9849F2C2608A531DFD16EEA3FCCE59B" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">我身边的廉洁风险防范-邓冠林</h3>
+											<div class="txt">
+	作为公司的一名业务人员，以前一直认为廉洁风险防范距离自己太远，和自己的平时工作扯不上关系，感觉那都是公司领导的事情。这段时间学习了公司党委、纪委下发的警示教育案例资料，本人感触很深，真切感受到业务员也是处于风险防范的一线。 
+
+
+	目前公司业务中的廉洁风险既涉及国内采购、国外销售，也涉及操作流程中的全部环节。本人有以下几点体会： 
+
+
+	1、业务操作中需体现真实业务形态，控制好收汇风险与货权风险，不能为贪图业务规模，甚至一些个人私欲，无视风险点，掩盖业务的真实性。 
+
+
+	2、遵守公司“三公”经费有关规定，业务招待中本着节俭、恰当的准则，不浪费，不过度消费，更不能带着个人利益目的参与消费。 
+
+
+	3、在平时的工作和学习中，做到做人正直，品行端正，约束好自己的行为，做合格的共产党员。  
+
+
+	 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;第三党支部&nbsp;  
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;邓冠林 
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2019年5月 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-05-24 16:41:24</span></div>
+										</div>
+									</a>
+								</li>
+
+							</ul>
+							<div class="pages hidden-l">
+	
+	
+	
+	
+	<div class="goto float-right">
+		到第<input id="skipPageNum" type="text" class="inputs"/>页 <input id="skip_page_btn" onclick="skipPage()" type="button" value="确定" class="submit"/>
+	</div>
+	<div class="total">共<em>6</em>页</div>
+	<ul class="clearfix">
+		<li class="prev"><a href="javascript:void(0)" onclick="lastPage()"><i class="icons-arr-l"></i></a></li>
+		
+			
+					<li class="cur"><a href="javascript:void(0)" onclick="clickPage(this)">1</a></li>
+			
+					<li><a href="javascript:void(0)" onclick="clickPage(this)">2</a></li>
+			
+					<li><a href="javascript:void(0)" onclick="clickPage(this)">3</a></li>
+			
+					<li><a href="javascript:void(0)" onclick="clickPage(this)">4</a></li>
+		
+            <li><span class="ellipsis">...</span></li>
+		
+		<li class="next"><a href="javascript:void(0)" onclick="nextPage()"><i class="icons-arr-r"></i></a></li>
+		
+	</div>
+	
+							<!--
+							<div class="goto float-right">
+								到第<input type="text" class="inputs"/>页 <input type="button" value="确定" class="submit"/>
+							</div>
+							<div class="total">共<em>67</em>页</div>
+							<ul class="clearfix">
+								<li class="prev"><a href="###">上一页</a></li>
+								<li><a href="###">1</a></li>
+								<li class="cur"><a href="###">2</a></li>
+								<li><a href="###">3</a></li>
+								<li><a href="###">4</a></li>
+								<li><a href="###">5</a></li>
+								<li class="next"><a href="###">下一页</a></li>
+							</ul>
+							-->
+						</div>
+							<div class="loading"><i class="icons-loading"></i><span>正在加载中</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- 尾部 -->
+				<!-- 尾部 -->
+			    <div class="layout g-footer">
+					<div class="container text-center footer-links">
+						<ul class="hidden-l clearfix">
+							<li>
+								<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0210~~0~-1-.html">产品在线</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+							</li>
+							
+						</ul>
+						<p class="hidden-l">
+							浙江省化工进出口有限公司 版权所有&copy;2017
+							<span>
+							<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010402003544"><i style="margin-right:3px;"><img src="../../st/chem/res/images/icons/beian.png"></i>浙公网安备 33010402003544号</a>
+							<a>工信部备案号      浙ICP备09087408号</a>
+							</span>
+						</p>
+						<p class="footer-mobi">工信部备案号      浙ICP备09087408号</p>
+						<p class="footer-mobi">浙江省化工进出口有限公司 版权所有&copy;2018</p>
+					</div>
+				</div>
+		<!--联系方式 end-->
+		<!--登录弹出框-->
+			<div class="login-cover">
+				<div class="login-cover-s">
+					<p>登陆~~请选择pc端进行登录</p>
+					<button>知道了</button>
+				</div>
+			</div>
+		<!--登录弹出框end-->
+		<script type="text/javascript">
+			
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+		</script>
+			</div>
+			<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+			
+		</div>	
+		
+		<script type="text/javascript">
+
+			showMenu();//手机页面显示导航
+			loginPop();//手机页面点击登录出现提示框
+			loginPop();
+			goTopPC();
+			goTop();
+			
+			
+			//根据当前页面数控制【上一页】和【下一页】样式
+			var total = parseInt($(".total").find("em").text()); 
+			var curPage = parseInt($(".cur").find("a").text()); 
+			if(curPage == 1){
+				$(".prev").find("a").removeAttr("onclick");
+				//$(".prev").hide();
+			}
+			//else{
+			//	$(".prev").show();
+			//}
+			if(curPage == total){
+				$(".next").find("a").removeAttr("onclick");
+				//$(".next").hide();
+			}
+			//else{
+			//	$(".next").show();
+			//}
+			
+			//跳转到指定页
+			function skipPage(){
+				var skipPageNum = $("#skipPageNum").val();
+				var reg = /^-?([1-9]\d*|0(?!\.0+$))\.\d+?$/;
+				if(skipPageNum > total){
+					skipPageNum = total;
+				}else if(skipPageNum<1){
+					skipPageNum = 1;
+				}else if(reg.test(skipPageNum)){
+					return;
+				}else if(skipPageNum == "" || skipPageNum == null){
+					return;
+				}
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+			//点击指定页
+			function clickPage(e){
+				var skipPageNum = $(e).text();
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+			//上一页
+			function lastPage(){
+				skipPageNum = curPage-1
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+			//下一页
+			function nextPage(){
+				skipPageNum = curPage+1
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+		</script>
+	</body>
+
+</html>

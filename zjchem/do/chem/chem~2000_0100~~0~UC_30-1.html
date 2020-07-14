@@ -1,0 +1,580 @@
+	<!DOCTYPE HTML>
+<html lang="zh-cn">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="../../st/chem/res/favicon.ico" type="image/x-icon">
+		<title>企业新闻</title>
+	<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/jquery.event.swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-base_v1.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-core_v2.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/trade/account.js"></script>
+	<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/introduce.css"/>
+		<!--[if lt IE 9]>
+			<script src="js/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!--头部-->
+
+			<div class="layout bg-gray header-top hidden-l">
+				<div class="container">
+					<div class="float-right other-link">
+						<a href="../../../../www.zhejiangchemicals.com:8090/zjchem/do/chem/chem~3000_0020~~0.html%3Frollback_url=%252Fzjchem%252Fdo%252Fchem%252Fchem~3000_0070~~0~UC_10.html" class="text-gray">操作平台</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0090~~0~FO_40--.html" class="text-gray">帮助中心</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html" class="text-gray">english</a>
+					</div>
+					<div class="float-left">
+						<p class="welcome text-gray"><span id="Login_user" onclick="nameClick()"></span><span>您好，欢迎来到浙江省化工进出口有限公司</span>
+							<a href="chem~3000_0020~~0.html" class="text-primary">[登录]</a>
+							<a href="chem~3000_0010~~0~ZC_10.html" class="text-gray" id="register">[免费注册]</a>
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" id="logout">[退出]</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--logo区-->
+			<div class="layout padding-top padding-small-bottom boxshadow">
+				<div class="container header-wrap">
+					<div class="line padding-small-top padding-small-bottom hidden-l">
+						<div class="telphone float-right">
+							<!--<i class="icons-tel"></i><span>0571-967209</span>-->
+						</div>
+						<div class="m-search float-right clearfix margin-little-top">
+							<div class="search">
+								<input type="text" id="searchInput" placeholder="请输入订单号" class="search-text">
+							</div>
+							<button class="submit" id="submit" name="submit" onclick="search()"><i class="icons-search"></i></button>
+						</div>
+						<div class="logo float-left">
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" class="logo-bg" title="浙江省化工进出口有限公司"></a>
+						</div>
+						
+					</div>
+					<div class="header-mob hidden-m hidden-b hidden-s show-l">
+						<div class="leftmenu"><i class="icons-menu"></i></div>
+						<div class="title"><img src="../../st/chem/res/images/logo-mini.png" alt="" /></div>
+					</div>
+					<div class="fixedmenu clearfix">
+						<div class="nav absolute">
+							<ul class="text-center">
+							
+								<li >
+									<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0100~~0~UC_30-1.html">党政建设</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+									<!--<span>公司简介/董事长致辞/组织机构/发展历程/公司战略</span>-->
+								</li>
+								
+								<li >
+									<a style="cursor:pointer;" onClick="productOnLine()">产品在线</a>
+								</li>
+								
+								<!--<li  class="platform">
+									<a href="/zjchem/do/chem/chem~2000_0170~~0~UC_30-FO_60.html">外贸综合服务平台</a>
+									<span>通关/外汇/退税/物流/金融</span>
+								</li>-->
+								<li  class="platform">
+									<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+									<!--<span>人才理念/招贤纳士/培训体系/薪酬福利</span>-->
+								</li>
+								<li >
+									<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+								</li>
+								
+								<li class="join" >
+									<a href="chem~3000_0010~~0~ZC_10.html">注册</a>
+								</li>
+								<li class="login">
+									<a href="chem~3000_0020~~0.html">登录</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mask-layer"></div>
+					</div>
+				</div>
+			</div>
+				
+		<script type="text/javascript">
+
+			//showMenu();//手机页面显示导航
+			//loginPop();//手机页面点击登录出现提示框
+			/**
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+			**/
+			
+			var username=getCookie("username");
+			if(username!="undifined" && username!="" && username!= null){
+				$("#Login_user").text(username+" ");
+				$("#Login_user").attr("style","color:#FF7700;cursor:pointer");
+				$(".text-primary").attr("style","display:none");
+				$("#register").attr("style","display:none");
+				$("#logout").attr("style","display;color:#f66d5d");
+			}else{
+				$(".text-primary").attr("style","display");
+				$("#register").attr("style","display");
+				$("#logout").attr("style","display:none");
+			}
+			
+			function nameClick(){
+				if(username!="undifined" && username!=""){
+					//跳转到基本信息
+				}else{
+					//登录
+					window.location.href="/zjchem/do/chem/chem~3000_0020~~0.html";
+				}
+			}
+			
+			var logoutUrl="/zjchem/do/chem/chem~~chem_logout_z~0010~0.do";
+			$("#logout").click(function(){
+				$.ajax({
+					type : "POST",
+					async : false,
+					url : logoutUrl,
+					data : {
+						
+					},
+					global : false,
+					success : function(data, textStatus) {
+						if (data.RESULTCODE == "SUCCESS") {
+		                	clearCookie("username");
+		                } else {
+		                   return false;
+		                }
+					},
+					dataType : "json"
+				});
+			});
+			
+			function productOnLine(){
+				clearCookie("proName");
+				clearCookie("ocpath");
+				var prohref="/zjchem/do/chem/chem~2000_0210~~0~-1-.html";
+				window.location.href=encodeURI(prohref);
+			}
+			
+			//清除cookie    
+			function clearCookie(name) {    
+			    setCookie(name, "", -1);    
+			}  
+			
+			//设置cookie
+			function setCookie(c_name,value,expiredays){
+				var exdate=new Date()
+				exdate.setDate(exdate.getDate()+expiredays)
+				document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+			}
+			
+			function search(){
+				var olcode=$("#searchInput").val();
+				var searchPage="/zjchem/do/chem/chem~2000_0230~~0~"+olcode+".html";
+				if(olcode!=""){
+					window.location.href=encodeURI(searchPage);
+				}
+			}
+			
+			//获取cookie
+			function getCookie(c_name){
+				if (document.cookie.length>0){
+					c_start=document.cookie.indexOf(c_name + "=")
+					if (c_start!=-1){
+						c_start=c_start + c_name.length+1
+						c_end=document.cookie.indexOf(";",c_start)
+						if (c_end==-1) c_end=document.cookie.length
+						return unescape(document.cookie.substring(c_start,c_end))
+					}
+				}
+				return ""
+			}
+		</script>
+			</div>
+				<!--banner-->
+			<div class="content-home">
+				<!--banner-->
+				<div class="layout">
+					<div class="banner-news"><div class="banner-text">党政建设</div></div>
+				</div>
+				<div class="intr-wrap no-padding">
+				<!--面包屑-->
+				<div class="m-crumbs hidden-l">
+					<span>您当前的位置：首页></span><a href="chem~2000_0100~~0~UC_10-1.html">党政建设</a>
+				</div>
+				<!--详情部分-->
+				<div class="line">
+					<div class="mob-side-menu hidden-s hidden-m hidden-b">
+						<div class="clearfix current">
+							<h4 class="title float-left">
+								<div class="zh">企业新闻</div>
+								<div class="en">NEWS</div>
+							</h4>
+						</div>
+					</div>
+					<div class="layout">
+						<div class="bg-context">
+							<h2 class="list-title">资讯列表</h2>
+							<ul class="news">
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000146.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/BA/C5/CE/BAC5CE68079A0CC7C33992FFC6510D3B" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">浙江化工“不忘初心、牢记使命”主题教育活动之战略案例大赛宣讲分享</h3>
+											<div class="txt">
+	[图片]为落实集团管理提升年，高标准推进公司“不忘初心、牢记使命”主题教育，公司党委邀请童灿灿同志为公司全体党员、积极分子作战略案例大赛宣讲的分享。
+
+
+	童灿灿同志分两次为公司全体党员作了题为“实施聚焦战略为契机，树立团队发展新起点”的战略案例大赛宣讲，从企业遇到的问题、聚焦战略的实施、现阶段取得的成果、有待提升的空间四个方面为大家作了公司精萘小组的战略案例分享。童灿灿提到，当前企业存在业绩不稳定、风险高、收益低的问题，聚焦战略的实施应分阶段推进，从数据分析试点先行、到资源聚焦重点突破、最终实现示范效应推动变革。同时，童灿灿同志还给大家介绍了公司精萘小组现阶段取得的成绩，分享了可复制性的经验，并提出了当前聚焦战略有待提升的空间。
+
+
+	通过此次战略案例大赛的宣讲分享，公司业务部门的党员同志纷纷表示收获颇多。公司类似精萘小组的产品聚焦战略的实施，为公司业务的发展提供了更大的空间和平台，对公司的发展有着极其重要的作用。
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-09-03 14:39:24</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000145.html">
+										<img  width="200px" height="130px" src="chem~2000_0100~~0~UC_30-1.html" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">习近平新时代中国特色社会主义思想纲要学习心得</h3>
+											<div class="txt">
+	全书紧紧围绕习近平新时代中国特色社会主义思想是党和国家必须长期坚持的指导思想这一主题，以“八个明确”和“十四个坚持”为核心内容和主要依据，对习近平新时代中国特色社会主义思想作了全面系统的阐述，有助于广大干部群众更好理解把握这一思想的基本精神、基本内容、基本要求，更加自觉地用以武装头脑、指导实践、推动工作。《纲要》内容丰富、结构严整，忠实原文原著、文风生动朴实，是全党开展“不忘初心、牢记使命”主题教育的重要学习材料，是广大干部群众深入学习领会习近平新时代中国特色社会主义思想的重要辅助读物。 
+
+
+	习近平新时代中国特色社会主义思想内涵丰富、博大精深，是我们做好各项工作的强大思想武器。坚持和发展中国特色社会主义，是改革开放以来我们党全部理论和实践的主题，也是习近平新时代中国特色社会主义思想的主题。进入新时代，面对世情国情党情的深刻变化，面对我国社会主要矛盾的深刻变化，面对我国发展起来后更复杂、更具挑战性的新情况新问题，必须回答好“中国向何处去”的问题。习近平总书记准确把握时代大势，紧密结合新的时代条件和实践要求，以全新的视野深化了对社会主义建设规律的认识，系统回答了新时代坚持和发展什么样的中国特色社会主义、怎样坚持和发展中国特色社会主义这个重大时代课题。围绕坚持和发展什么样的中国特色社会主义，习近平总书记从理论渊源、历史根据、本质特征、独特优势、强大生命力等多方位多角度进行了深刻阐述，强调中国特色社会主义是既坚持科学社会主义基本原则，又具有鲜明实践特色、理论特色、民族特色、时代特色的社会主义，是中国特色社会主义道路、理论、制度、文化四位一体的社会主义，是统揽伟大斗争、伟大工程、伟大事业、伟大梦想的社会主义，是根植于中国大地、反映中国人民意愿、适应中国和时代发展进步要求的社会主义。围绕怎样坚持和发展中国特色社会主义，习近平总书记明确提出了新时代坚持和发展中国特色社会主义的总目标、总任务、总体布局、战略布局和发展方向、发展方式、发展动力、战略步骤、外部条件、政治保证，对经济、政治、法治、科技、文化、民生、生态文明、国家安全、国防和军队、“一国两制”和祖国统一、外交、党的建设等各方面工作作出理论分析和政策指导，涵盖了“五位一体”总体布局和“四个全面”战略布局。这些重要思想观点，深刻揭示了新时代中国特色社会主义的本质特征、发展规律和建设路径，为在新的时代条件下坚持和发展中国特色社会主义提供了科学理论指引。 
+
+
+	习近平新时代中国特色社会主义思想，确立了实现中华民族伟大复兴中国梦的战略安排，明确坚持和发展中国特色社会主义，总任务是实现社会主义现代化和中华民族伟大复兴，在全面建成小康社会的基础上，分两步走在本世纪中叶建成富强民主文明和谐美丽的社会主义现代化强国。强调发展是解决我国一切问题的基础和关键，必须坚持稳中求进工作总基调，牢固树立和自觉践行新发展理念，建设现代化经济体系，实现经济高质量发展，坚决打好“三大攻坚战”，不断壮大我国经济实力和综合国力，不断夯实实现中国梦的物质基础。 
+
+
+	 
+
+
+	第一党支部 
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;蒋正良</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-09-03 10:46:59</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000144.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/D0/6B/54/D06B54CE10FE45497D86904E7BAC1C27" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">不忘初心、继续前进</h3>
+											<div class="txt">
+	[图片]为中国人民谋幸福，为中华民族谋复兴，是中国共产党人的初心和使命。为深入开展“不忘初心、牢记使命”主题教育，全面贯彻守初心、担使命、找差距、抓落实的总要求，浙江化工党委组织全体党员观看《不忘初心、继续前进》主题教育专题影片。
+
+
+	本次观影组织大家观看了中央电视台推出的大型政论片《不忘初心、继续前进》第一集：举旗定向，第二集：人民至上，围绕以习近平同志为核心的党中央近五年来治国理政上的伟大实践，全面再现了中国共产党领导全国人民推荐社会主义现代化建设，实现中华民族伟大复兴中国梦的伟大实践。影片用一个个生动的故事案例，向全国人民展现了中国共产党不忘初心、砥砺奋进的壮阔征程。在《举旗定向》中，习总书记指出：“社会主义是干出来的！中华民族的事业不能停顿，因为我们这个民族，我们积蓄的能量太久了，要爆发一下，就是实现我们中华民族伟大复兴的中国梦”。在《人民至上》中，习总书记强调：“人民群众对美好生活的向往，就是我们的奋斗目标。大家撸起袖子，加油干！”
+
+
+	观影结束后，浙江化工的党员们受到了深深地触动，大家纷纷表示，不忘初心的前提就是要举旗定向。作为国有企业的党员，我们的初心是要牢记自己的岗位职责，做好自己的本职工作，为企业创造更多的价值，从而实现自身的价值。
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-09-03 10:38:39</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000025.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/1D/7E/9A/1D7E9AEE748A464E2541E19339E34A2C" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">佩戴党徽、过政治生日、亮党员身份</h3>
+											<div class="txt">
+	[图片]今年是中华人民共和国成立70周年。为进一步贯彻落实党的十九大精神和习近平新时代中国特色社会主义思想，扎实开展“不忘初心，牢记使命”主题教育。7月1日，浙江化工党委组织公司60余名党员赴绍兴，开展“佩戴党徽、过政治生日、亮党员身份”的主题教育活动，庆祝中国共产党成立98周年。
+
+
+	弘扬革命精神，传承爱国情怀。党员们身着整齐的白衬衫，左胸前佩戴鲜红的党徽，手举鲜艳的小国旗，在周恩来祖居纪念广场列队集合，聆听公司党委书记、董事长颜雷翔“佩戴党徽、过政治生日、亮党员身份”的主题党课，感受周恩来总理崇高的人格魅力。在颜雷翔书记的带领下，面对鲜艳的党旗，面对周恩来总理的雕像，大家举起右手，重温入党誓词，铿锵有力的誓言回响在广场上空。党委副书记、纪委书记方立在活动现场宣读了公司2018年度先进基层党支部、优秀共产党员和优秀党务工作者表彰名单、公司2019年微型党课比赛获奖名单，现场表彰了三个先进基层党支部，八名优秀共产党员，两名优秀党务工作者，五名微型党课获奖人员。鼓励公司全体党员以先进为榜样，加强党性修养，提高思想觉悟，加强自身学习，提高政治、业务素质，做好本职工作，为公司的改革和发展做出新的更大的贡献。
+
+
+	随后，大家走进周恩来祖居，认真倾听讲解员对周恩来总理生平事迹介绍，深刻感悟周恩来总理为党、为国家、为人民鞠躬尽瘁的崇高革命精神，缅怀周恩来总理所建立的卓著功勋。周恩来总理以国家为重，以人民为先，无私奉献，忘我工作的精神，为后人树立了一座永恒的丰碑，更感召着大家学习他的优秀品德，发扬他的优秀传统，不忘初心、牢记使命，传承精神，砥砺前行。
+
+
+	党员们还参观了鲁迅故居、三味书屋和百草园，身临其境地感受了鲁迅先生青少年时期学习、生活和工作的场所，感悟鲁迅先生作品中的动人意境，以及中国革命作家忧国忧民、无私无畏的爱国主义情怀，锲而不舍的治学态度。
+
+
+	党员们同时参观了秋瑾故居。通过参观秋瑾少女时期的生活场所，学习秋瑾的英雄事迹，感受她作为旧时代女性巾帼不让须眉的凌云壮志，大家被秋瑾不畏强权、不怕牺牲的革命精神所深深震撼。
+
+
+	此次主题党日活动是公司“不忘初心、牢记使命”主题教育工作中的创新形式的学习教育，内容充实，立意鲜明，成效显著。大家纷纷表示，作为党员应当以民族、国家利益为重，坚定共产主义信念，发扬光荣传统，增强“四个意识”，坚定“四个自信”，做到“两个维护”，不断提升自我，悟初心、守初心、践初心，牢记使命，砥砺前行。
+
+
+	
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-09-02</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000143.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/AD/F6/CB/ADF6CBB99F382D615189E7E06DF89268" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">“不忘初心、牢记使命”主题教育心得体会</h3>
+											<div class="txt">
+	自全党开展“不忘初心、牢记使命”主题教育以来，国贸集团及公司党委先后组织了多次围绕“不忘初心，牢记使命”的主题教育。在此过程中，第三支部全体党员积极参与学习，并围绕自身工作实际，开展深入讨论、自我批评，自我改进。现就支部学习的心得总结如下： 
+
+
+	一、开展学习活动应聚焦。 
+
+
+	聚焦，体现为两个方面：一是根据公司的实际情况及支部党员的实际情况，有针对性的开展学习，解决实际问题，不搞形式主义。二是开展学习应有明确主题，学习要有讨论，讨论要有结果。 
+
+
+	二、努力提高党员个人素质。 
+
+
+	作为员工，应脚踏实地地做好本职工作，作为一名党员，更应该秉承高度的责任感和敬业精神，带头履行工作职责，与时俱进，不断适应新形势，新情况，新任务。 
+
+
+	新一届支委应加强《习近平新时代中国特色社会主义思想学习纲要》、《中国共产党支部工作条例》的学习，迅速适应支委的角色，带头做好支部党建工作。 
+
+
+	三、立足本职工作做改进。 
+
+
+	第三支部的党员分别来自职能部门和业务部们。职能部门既要做好管理也要做好服务，支持业务一线开展工作。所以在实际工作中，应不断加强沟通、提高效率，面对新的问题，采取新的方式，不断提升工作价值；业务部门作为公司一线队伍，面临着复杂的国内外贸易与经济形势，应时刻保持清醒的头脑，增强底线意识，坚持合规经营，杜绝重大逾期就风险资产的发生。 
+
+
+	 
+
+
+	 
+
+
+	 
+
+
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 中共浙江省化工进出口有限公司第三支部委员会 
+
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-08-06 16:30:44</span></div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="chem~2000_0110~~0~UCHI0010000000000000140.html">
+										<img  width="200px" height="130px" src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!srcdocroot/article/1B/BF/56/1BBF56CA92DDA30A640DAAA0CD4249F0" alt=""/>
+										<div class="new-info">   
+											<h3 class="news-title">忆初心，执使命</h3>
+											<div class="txt">
+	&nbsp;&nbsp;&nbsp;&nbsp;[图片]2019年7月11日，浙江化工第五支部前往“两山”理论发源地安吉余村开展“不忘初心、牢记使命”主题党日活动。习近平同志曾在安吉余村提出了“绿水青山就是金山银山”这一指导思想。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;梅雨季节接近尾声，热意款款而待。放眼都是山峦的翠绿，田间地头绽开的星点色彩。溪水潺潺，虫鸣阵阵，路旁的民居、茶楼和绿色景致契合一致，勾勒出生态村镇的活力。时任浙江省委书记的习近平同志说过：“生态建镇，就要有所为，有所不为”。余村人民在正确、科学地发展道路上做出的努力，融汇于身边一草一木，一砖一瓦间。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;随后，支部成员观看了《坚定“两山”路，奋斗新时代》的专题纪录片，体会这几年来安吉余村的改变，深刻理解生态保护、可持续发展的具象化实例。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;观影结束后，省化工公司党委副书记、总经理王芬同志给第五支部全体党员作了题为“不忘初心共筑梦，牢记使命勇向前”的主题教育专题党课。王芬同志着重强调对风险控制，防微杜渐，增强自身的观念，对支部成员提出了更高要求，要我们增强底板，补齐短板，更好的传承第五支部的优良传统。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;课后支部党员对前任支部书记刘虹同志九年一丝不苟的支部党建工作态度表示了肯定，新的支委会成员表示将以同样认真负责的态度继续做好支部党建工作。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;当晚，支部成员再次组织集中学习了《习近平关于“不忘初心、牢记使命”重要论述选编》、《习近平新时代中国特色社会主义思想学习纲要》、《楼晶同志在集团“不忘初心、牢记使命”主题教育 工作会议上的讲话》、楼晶同志七一主题党课内容和“应知应会”知识集。大家对《选编》中的抗风险内容，《纲要》中的高质量发展经济内容，楼董的二次讲话内容与“应知应会”中“现阶段使命与工作的意义”有了更加深化、有内涵的学习认识。 
+
+
+	&nbsp;&nbsp;&nbsp;&nbsp;通过此次主题党日活动，五支部党员纷纷表示：为了个人生活，为了企业创利，为了集团建设，为了国家发展；为人民谋幸福，为民族谋复兴；要向着人民群众对美好生活的需求而不竭努力，任重而道远。不忘初心，牢记使命，砥砺前行。 
+</div>
+											<div class="date"><i class="icons-clock"></i><span>2019-07-22 14:23:11</span></div>
+										</div>
+									</a>
+								</li>
+
+							</ul>
+							<div class="pages hidden-l">
+	
+	
+	
+	
+	<div class="goto float-right">
+		到第<input id="skipPageNum" type="text" class="inputs"/>页 <input id="skip_page_btn" onclick="skipPage()" type="button" value="确定" class="submit"/>
+	</div>
+	<div class="total">共<em>1</em>页</div>
+	<ul class="clearfix">
+		<li class="prev"><a href="javascript:void(0)" onclick="lastPage()"><i class="icons-arr-l"></i></a></li>
+		
+			
+					<li class="cur"><a href="javascript:void(0)" onclick="clickPage(this)">1</a></li>
+		
+		
+		<li class="next"><a href="javascript:void(0)" onclick="nextPage()"><i class="icons-arr-r"></i></a></li>
+		
+	</div>
+	
+							<!--
+							<div class="goto float-right">
+								到第<input type="text" class="inputs"/>页 <input type="button" value="确定" class="submit"/>
+							</div>
+							<div class="total">共<em>67</em>页</div>
+							<ul class="clearfix">
+								<li class="prev"><a href="###">上一页</a></li>
+								<li><a href="###">1</a></li>
+								<li class="cur"><a href="###">2</a></li>
+								<li><a href="###">3</a></li>
+								<li><a href="###">4</a></li>
+								<li><a href="###">5</a></li>
+								<li class="next"><a href="###">下一页</a></li>
+							</ul>
+							-->
+						</div>
+							<div class="loading"><i class="icons-loading"></i><span>正在加载中</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- 尾部 -->
+				<!-- 尾部 -->
+			    <div class="layout g-footer">
+					<div class="container text-center footer-links">
+						<ul class="hidden-l clearfix">
+							<li>
+								<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0210~~0~-1-.html">产品在线</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+							</li>
+							
+						</ul>
+						<p class="hidden-l">
+							浙江省化工进出口有限公司 版权所有&copy;2017
+							<span>
+							<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010402003544"><i style="margin-right:3px;"><img src="../../st/chem/res/images/icons/beian.png"></i>浙公网安备 33010402003544号</a>
+							<a>工信部备案号      浙ICP备09087408号</a>
+							</span>
+						</p>
+						<p class="footer-mobi">工信部备案号      浙ICP备09087408号</p>
+						<p class="footer-mobi">浙江省化工进出口有限公司 版权所有&copy;2018</p>
+					</div>
+				</div>
+		<!--联系方式 end-->
+		<!--登录弹出框-->
+			<div class="login-cover">
+				<div class="login-cover-s">
+					<p>登陆~~请选择pc端进行登录</p>
+					<button>知道了</button>
+				</div>
+			</div>
+		<!--登录弹出框end-->
+		<script type="text/javascript">
+			
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+		</script>
+			</div>
+			<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+			
+		</div>	
+		
+		<script type="text/javascript">
+
+			showMenu();//手机页面显示导航
+			loginPop();//手机页面点击登录出现提示框
+			loginPop();
+			goTopPC();
+			goTop();
+			
+			
+			//根据当前页面数控制【上一页】和【下一页】样式
+			var total = parseInt($(".total").find("em").text()); 
+			var curPage = parseInt($(".cur").find("a").text()); 
+			if(curPage == 1){
+				$(".prev").find("a").removeAttr("onclick");
+				//$(".prev").hide();
+			}
+			//else{
+			//	$(".prev").show();
+			//}
+			if(curPage == total){
+				$(".next").find("a").removeAttr("onclick");
+				//$(".next").hide();
+			}
+			//else{
+			//	$(".next").show();
+			//}
+			
+			//跳转到指定页
+			function skipPage(){
+				var skipPageNum = $("#skipPageNum").val();
+				var reg = /^-?([1-9]\d*|0(?!\.0+$))\.\d+?$/;
+				if(skipPageNum > total){
+					skipPageNum = total;
+				}else if(skipPageNum<1){
+					skipPageNum = 1;
+				}else if(reg.test(skipPageNum)){
+					return;
+				}else if(skipPageNum == "" || skipPageNum == null){
+					return;
+				}
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+			//点击指定页
+			function clickPage(e){
+				var skipPageNum = $(e).text();
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+			//上一页
+			function lastPage(){
+				skipPageNum = curPage-1
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+			//下一页
+			function nextPage(){
+				skipPageNum = curPage+1
+				window.location.href="/zjchem/do/chem/chem~2000_0100~~0~UC_10-"+skipPageNum+".html";
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,389 @@
+	<!DOCTYPE HTML>
+<html lang="zh-cn">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="../../st/chem/res/favicon.ico" type="image/x-icon">
+		<title>企业新闻详情</title>
+	<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/jquery.event.swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-base_v1.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-core_v2.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/trade/account.js"></script>
+	<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/common.css">
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/introduce.css"/>
+		<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<!--头部-->
+
+			<div class="layout bg-gray header-top hidden-l">
+				<div class="container">
+					<div class="float-right other-link">
+						<a href="../../../../www.zhejiangchemicals.com:8090/zjchem/do/chem/chem~3000_0020~~0.html%3Frollback_url=%252Fzjchem%252Fdo%252Fchem%252Fchem~3000_0070~~0~UC_10.html" class="text-gray">操作平台</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0090~~0~FO_40--.html" class="text-gray">帮助中心</a>
+						<span class="vline"></span>
+						<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html" class="text-gray">english</a>
+					</div>
+					<div class="float-left">
+						<p class="welcome text-gray"><span id="Login_user" onclick="nameClick()"></span><span>您好，欢迎来到浙江省化工进出口有限公司</span>
+							<a href="chem~3000_0020~~0.html" class="text-primary">[登录]</a>
+							<a href="chem~3000_0010~~0~ZC_10.html" class="text-gray" id="register">[免费注册]</a>
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" id="logout">[退出]</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--logo区-->
+			<div class="layout padding-top padding-small-bottom boxshadow">
+				<div class="container header-wrap">
+					<div class="line padding-small-top padding-small-bottom hidden-l">
+						<div class="telphone float-right">
+							<!--<i class="icons-tel"></i><span>0571-967209</span>-->
+						</div>
+						<div class="m-search float-right clearfix margin-little-top">
+							<div class="search">
+								<input type="text" id="searchInput" placeholder="请输入订单号" class="search-text">
+							</div>
+							<button class="submit" id="submit" name="submit" onclick="search()"><i class="icons-search"></i></button>
+						</div>
+						<div class="logo float-left">
+							<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" class="logo-bg" title="浙江省化工进出口有限公司"></a>
+						</div>
+						
+					</div>
+					<div class="header-mob hidden-m hidden-b hidden-s show-l">
+						<div class="leftmenu"><i class="icons-menu"></i></div>
+						<div class="title"><img src="../../st/chem/res/images/logo-mini.png" alt="" /></div>
+					</div>
+					<div class="fixedmenu clearfix">
+						<div class="nav absolute">
+							<ul class="text-center">
+							
+								<li >
+									<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0100~~0~UC_30-1.html">党政建设</a>
+								</li>
+								
+								<li  class="platform">
+									<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+									<!--<span>公司简介/董事长致辞/组织机构/发展历程/公司战略</span>-->
+								</li>
+								
+								<li >
+									<a style="cursor:pointer;" onClick="productOnLine()">产品在线</a>
+								</li>
+								
+								<!--<li  class="platform">
+									<a href="/zjchem/do/chem/chem~2000_0170~~0~UC_30-FO_60.html">外贸综合服务平台</a>
+									<span>通关/外汇/退税/物流/金融</span>
+								</li>-->
+								<li  class="platform">
+									<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+									<!--<span>人才理念/招贤纳士/培训体系/薪酬福利</span>-->
+								</li>
+								<li >
+									<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+								</li>
+								
+								<li class="join" >
+									<a href="chem~3000_0010~~0~ZC_10.html">注册</a>
+								</li>
+								<li class="login">
+									<a href="chem~3000_0020~~0.html">登录</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mask-layer"></div>
+					</div>
+				</div>
+			</div>
+				
+		<script type="text/javascript">
+
+			//showMenu();//手机页面显示导航
+			//loginPop();//手机页面点击登录出现提示框
+			/**
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+			**/
+			
+			var username=getCookie("username");
+			if(username!="undifined" && username!="" && username!= null){
+				$("#Login_user").text(username+" ");
+				$("#Login_user").attr("style","color:#FF7700;cursor:pointer");
+				$(".text-primary").attr("style","display:none");
+				$("#register").attr("style","display:none");
+				$("#logout").attr("style","display;color:#f66d5d");
+			}else{
+				$(".text-primary").attr("style","display");
+				$("#register").attr("style","display");
+				$("#logout").attr("style","display:none");
+			}
+			
+			function nameClick(){
+				if(username!="undifined" && username!=""){
+					//跳转到基本信息
+				}else{
+					//登录
+					window.location.href="/zjchem/do/chem/chem~3000_0020~~0.html";
+				}
+			}
+			
+			var logoutUrl="/zjchem/do/chem/chem~~chem_logout_z~0010~0.do";
+			$("#logout").click(function(){
+				$.ajax({
+					type : "POST",
+					async : false,
+					url : logoutUrl,
+					data : {
+						
+					},
+					global : false,
+					success : function(data, textStatus) {
+						if (data.RESULTCODE == "SUCCESS") {
+		                	clearCookie("username");
+		                } else {
+		                   return false;
+		                }
+					},
+					dataType : "json"
+				});
+			});
+			
+			function productOnLine(){
+				clearCookie("proName");
+				clearCookie("ocpath");
+				var prohref="/zjchem/do/chem/chem~2000_0210~~0~-1-.html";
+				window.location.href=encodeURI(prohref);
+			}
+			
+			//清除cookie    
+			function clearCookie(name) {    
+			    setCookie(name, "", -1);    
+			}  
+			
+			//设置cookie
+			function setCookie(c_name,value,expiredays){
+				var exdate=new Date()
+				exdate.setDate(exdate.getDate()+expiredays)
+				document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+			}
+			
+			function search(){
+				var olcode=$("#searchInput").val();
+				var searchPage="/zjchem/do/chem/chem~2000_0230~~0~"+olcode+".html";
+				if(olcode!=""){
+					window.location.href=encodeURI(searchPage);
+				}
+			}
+			
+			//获取cookie
+			function getCookie(c_name){
+				if (document.cookie.length>0){
+					c_start=document.cookie.indexOf(c_name + "=")
+					if (c_start!=-1){
+						c_start=c_start + c_name.length+1
+						c_end=document.cookie.indexOf(";",c_start)
+						if (c_end==-1) c_end=document.cookie.length
+						return unescape(document.cookie.substring(c_start,c_end))
+					}
+				}
+				return ""
+			}
+		</script>
+			
+		<!--banner-->
+		<div class="content-home">
+		<div class="intr-wrap no-padding">
+			<!--面包屑-->
+			
+			<div class="m-crumbs hidden-l">
+				<span>您当前的位置：</span><a href="chem~2000_0100~~0~UC_10-1.html">企业新闻 </a><span> &gt; </span><span>浙江化工开展2019年度首期商务支持专项培训</span>
+			</div>
+			<!--详情部分-->
+			<div class="line">
+				<div class="bg-context">
+					<div class="news-details-wrap">
+						<h1 class="detail-title">浙江化工开展2019年度首期商务支持专项培训</h1>
+						<span>——暨2019年首期新员工培训</span>
+						<div class="detail-from"><span class="from">来源：人力资源部</span><span class="news-time">发布时间：2019-05-29</span></div>
+						<div class="news-details">
+							<p><p class="MsoNormal" style="text-indent:24.0pt;">
+	<span style="font-size:12.0pt;font-family:&quot;">5</span><span style="font-size:12.0pt;font-family:&quot;">月<span>15</span>日，浙江化工迎来了<span>2019</span>年度第一批商务支持新人报到，商务支持专项培训正式启动开班典礼，开启为期约<span>1</span>个月的理论、实操培训与轮动实习。<span></span></span> 
+</p>
+<p class="MsoNormal" style="text-align:center;text-indent:24pt;">
+	<span style="font-size:12.0pt;font-family:&quot;"><img src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!detailimg/1F/DD/92/1FDD920AA9C0724AF43E3B699B6787E3" alt="" /><br />
+</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0pt;">
+	<span style="font-size:12.0pt;font-family:&quot;">第一阶段：走进浙江化工。本阶段，非商务支持新员工也一并参与。学员们先后学习了公司发展历程、规章制度、薪酬福利、职业发展、商务礼仪等基本内容，短短几天时间，大家从陌生到熟悉，从个人学习到彼此紧密联系，收获了思考、惊喜和感动。<span></span></span> 
+</p>
+<p class="MsoNormal" style="text-align:center;text-indent:24pt;">
+	<span style="font-size:12.0pt;font-family:&quot;"><img src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!detailimg/4B/36/08/4B3608B7EBF76E2B5DAA01980EAFCFDB" alt="" /><br />
+</span> 
+</p>
+<p class="MsoNormal" style="text-align:center;text-indent:24pt;">
+	<span style="font-size:12.0pt;font-family:&quot;">公司党委副书记、纪委书记方立代表领导班子主持《高管面对面》：<span></span></span> 
+</p>
+<p class="MsoNormal" style="text-align:center;text-indent:24pt;">
+	<span style="font-size:12.0pt;font-family:&quot;"><img src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!detailimg/18/B9/55/18B955154AE3D2C8AB9400503CD37186" alt="" /><br />
+</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0pt;">
+	<span style="font-size:12.0pt;font-family:&quot;">方书记寄语新人，希望他们在下一阶段培训及未来的工作中能够多学、多看、多做，多交流，通过不断的实践提升自身能力。此外，他还督促新人们应坚持廉洁从业，严守职业道德底线。<span></span></span> 
+</p>
+<p class="MsoNormal" style="text-align:center;text-indent:24pt;">
+	<span style="font-size:12.0pt;font-family:&quot;"><img src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!detailimg/9C/EA/3E/9CEA3EF73A6F12AA3356B63F32AE2966" alt="" /><br />
+</span> 
+</p>
+<p class="MsoNormal" style="text-indent:24.0pt;">
+	<span style="font-size:12.0pt;font-family:&quot;">第二阶段：商务支持实操技能培训。本阶段由公司党委委员、副总经理马岚以及来自各职能部门的<span>10</span>余位内训师分别为新人讲解了合同制定、托单等操作细则及注意事项。通过系统演练、现场模拟、“老人”分享等方式，使学员们对商务支持的具体工作内容有了更进一步的了解。<span></span></span> 
+</p>
+<p class="MsoNormal" style="text-align:center;text-indent:24pt;">
+	<span style="font-size:12.0pt;font-family:&quot;"><img src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!detailimg/62/5A/6D/625A6D858D0EA5F6EC13BB0A61FF920F" alt="" /><br />
+</span> 
+</p>
+<p class="MsoNormal" style="text-align:center;text-indent:24pt;">
+	<span style="font-size:12.0pt;font-family:&quot;"><img src="http://121.46.30.173:8090/zjchem/fs/ZJCHEM!detailimg/98/93/92/9893924629C32645571777229C00E1C0" alt="" /><br />
+</span> 
+</p>
+<span style="font-size:12.0pt;font-family:&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三阶段：轮动实习。在前两个阶段的培训结束后，公司将组织商务支持新人分批到各业务部门及相关职能部门进行实习，通过实习，了解各部门的业务运行状况，在辅导老师的指导下尽快熟悉工作。</span><br /></p>
+						</div>
+					</div>
+					<br />
+				</div>
+			</div>
+			</div>
+				<!-- 尾部 -->
+				<!-- 尾部 -->
+			    <div class="layout g-footer">
+					<div class="container text-center footer-links">
+						<ul class="hidden-l clearfix">
+							<li>
+								<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html">首页</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0070~~0~FO_30--.html">关于我们</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0210~~0~-1-.html">产品在线</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0080~~0~FO_65--.html">人力资源</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0085~~0~FO_55--.html">联系我们</a>
+							</li>
+							
+						</ul>
+						<p class="hidden-l">
+							浙江省化工进出口有限公司 版权所有&copy;2017
+							<span>
+							<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010402003544"><i style="margin-right:3px;"><img src="../../st/chem/res/images/icons/beian.png"></i>浙公网安备 33010402003544号</a>
+							<a>工信部备案号      浙ICP备09087408号</a>
+							</span>
+						</p>
+						<p class="footer-mobi">工信部备案号      浙ICP备09087408号</p>
+						<p class="footer-mobi">浙江省化工进出口有限公司 版权所有&copy;2018</p>
+					</div>
+				</div>
+		<!--联系方式 end-->
+		<!--登录弹出框-->
+			<div class="login-cover">
+				<div class="login-cover-s">
+					<p>登陆~~请选择pc端进行登录</p>
+					<button>知道了</button>
+				</div>
+			</div>
+		<!--登录弹出框end-->
+		<script type="text/javascript">
+			
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+		</script>
+		
+		</div>
+			
+				<!--联系方式-->
+<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+<div class="contact-way hidden-l">
+			<div class="item item-ewm"><i class="icons-ewm"></i><div class="ewm"><i class="arrowborder"></i><i class="shadowarrow"></i><img style="width:120px;height:120px" src="../../st/chem/res/images/temp/ewm.png"/></div></div>
+			<!--<div class="item item-qq" onclick="openQQ()"><div class="info"><h5 class="zh">在线服务咨询</h5><h6 class="en">ONLINE CONSULTION</h6></div><i class="icons-qq"></i></div>-->
+			<!--<div class="item"><i class="icons-email"></i></div>-->
+			<div class="item item-gotop"><i class="icons-top"></i></div>
+</div>
+
+<script type="text/javascript">
+	var getqq="/zjchem/do/chem/chem~~chem_openQQ~0010~0.do";
+	function openQQ(){
+	
+		$.ajax({
+			type:"POST",
+			async:false,
+			url:getqq,
+			data:{
+				
+			},
+			success:function(data,textStatus){
+					if(data.uqq!=""){
+						var url="tencent://message/?uin="+data.uqq+"&Site=qq&Menu=yes";
+						window.location.href=url;
+					}else{
+						//alert("暂未提供客服QQ,请拨打融易通客服热线：");
+					}
+			},
+			dataType:"json" 
+			});
+	}
+</script>				<!--联系方式 end-->
+		</div>
+		<script type="text/javascript">
+
+			select_choice(".option");//搜索框下拉
+			showMenu();//手机页面显示导航
+			loginPop();//手机页面点击登录出现提示框
+			showSubMenu()//二级页面的导航
+			loginPop();
+			goTopPC();
+			goTop();
+		</script>
+	</body>
+
+</html>

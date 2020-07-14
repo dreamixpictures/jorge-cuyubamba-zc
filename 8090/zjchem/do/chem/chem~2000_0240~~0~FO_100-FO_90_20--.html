@@ -1,0 +1,478 @@
+	<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="../../st/chem/res/favicon.ico" type="image/x-icon">
+		<title>英文首页</title>
+	<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/jquery.event.swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-base_v1.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-core_v2.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/trade/account.js"></script>
+	<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Zhejiang Chemical</title>
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/unslider.css"/>
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/sliders.css"/>
+
+		<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+	</head>
+</head>
+<body ontouchstart='' class="en">
+		<div class="wrapper">
+			<!--头部-->
+<!--头部-->
+			<div class="layout bg-gray header-top hidden-l">
+				<div class="container">
+					<div class="float-right other-link">
+						<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" class="text-gray">Chinese</a>
+					</div>
+					<div class="float-left">
+						<p class="welcome text-gray"><span>Welcome to Zhejiang Chemical Import & Export Co., Ltd.</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--logo区-->
+			<div class="layout padding-top padding-small-bottom boxshadow en">
+				<div class="container header-wrap">
+					<div class="line padding-small-top padding-small-bottom hidden-l">
+						<div class="telphone float-right">
+							<!--<i class="icons-tel"></i><span>0571-967209</span>-->
+						</div>
+						<div class="m-search float-right clearfix margin-little-top">
+							<div class="search">
+								<input type="text" id="searchInput"  placeholder="Search Order code  here" class="search-text">
+							</div>
+							<button class="submit"  name="submit" onclick="search()"><i class="icons-search"></i></button>
+						</div>
+						<div class="logo logo-en float-left">
+							<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html" class="logo-bg" title="浙江省化工进出口有限公司"></a>
+						</div>
+						
+					</div>
+					<div class="header-mob hidden-m hidden-b hidden-s show-l">
+						<div class="leftmenu"><i class="icons-menu"></i></div>
+						<div class="title"><img src="../../st/chem/res/images/logo-mini.png" alt="" /></div>
+					</div>
+					<div class="fixedmenu clearfix en">
+						<div class="nav absolute">
+							<ul class="text-center">
+								<li  class="cur index">
+									<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html">Home</a>
+								</li>
+								<li >
+									<a style="cursor:pointer;" onClick="productOnLine()">Product Categories</a>
+								</li>
+								
+								<li >
+									<a href="chem~2000_0270~~0~FO_90--.html">About US</a>
+								</li>
+								<li  class="about">
+									<a href="chem~2000_0280~~0~FO_100--.html">Contacts</a>
+								</li>
+								<li class="join">
+									<a href="chem~3000_0010~~0~ZC_10.html">Register</a>
+								</li>
+								<li class="login">
+									<a href="chem~3000_0020~~0.html">Login</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mask-layer"></div>
+					</div>
+				</div>
+			</div>
+			
+			<script>
+				function productOnLine(){
+					clearCookie("engproName");
+					clearCookie("engocpath");
+					var prohref="/zjchem/do/chem/chem~2000_0260~~0~-1-.html";
+					window.location.href=encodeURI(prohref);
+				}
+				
+				//清除cookie    
+				function clearCookie(name) {    
+				    setCookie(name, "", -1);    
+				}  
+				
+				//设置cookie
+				function setCookie(c_name,value,expiredays){
+					var exdate=new Date()
+					exdate.setDate(exdate.getDate()+expiredays)
+					document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+				}
+				
+			
+				function search(){
+					var value=$("#searchInput").val();
+					var searchPage="/zjchem/do/chem/chem~2000_0290~~0~"+value+".html";
+					if(value!=""){
+						window.location.href=encodeURI(searchPage);
+						}
+					}
+			
+			</script>
+			<div class="content-home">
+				<!--轮播图-->
+				<div class="layout">
+					<div class="line">
+						<!--pc轮播-->
+						<div class="xb12 hidden-l" id="banner">
+							<div class="banner lager-banner" style="margin-top: -54px;">
+								<ul>
+									<li>
+										<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="b1" style="background-image: url(../../st/chem/res/images/bg/banner-en-01.jpg);"></a>
+									</li>
+									<li>
+										<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="b2" style="background-image: url(../../st/chem/res/images/bg/banner-en-01.jpg);"></a>
+									</li>
+									<li>
+										<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="b3" style="background-image: url(../../st/chem/res/images/bg/banner-en-01.jpg);"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--手机轮播-->
+						<div class="xb12 hidden-b hidden-m hidden-s" id="banner2">
+							<div class="banner lager-banner">
+								<ul>
+									<li>
+										<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="b1"><img src="../../st/chem/res/images/bg/banner-01-mini.jpg"/></a>
+									</li>
+									<li>
+										<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="b2"><img src="../../st/chem/res/images/bg/banner-01-mini.jpg"/></a>
+									</li>
+									<li>
+										<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="b3"><img src="../../st/chem/res/images/bg/banner-01-mini.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--产品展示-->
+				
+				<div class="container">
+                    <div class="en-about-us">
+                        <h2 class="en-index-title">
+                            <em>About Us</em><a href="chem~2000_0270~~0~FO_90--.html" class="more">More&gt;&gt;</a>
+                        </h2>
+                        <div class="context clearfix ">
+                            <img src="../../st/chem/res/images/temp/en-index-about.jpg" alt="" class="float-left">
+                            <div class="text">
+		                                <h5 class="subtitle">About Us</h5>
+		                                <p>
+	<br />
+</p>
+<p class="MsoNormal" align="center" style="text-align:center;">
+	<span style="font-size:18px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:18px;">&nbsp; &nbsp; &nbsp; Zhejiang Chemicals Import and Export Corporation (ZHECHEM) was founded in 1980s in Hangzhou, located at the Citizen center near the Qiantangjiang River, which is the new economic and finance core district of the city.&nbsp;</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:18px;">&nbsp; &nbsp; &nbsp;</span><span style="font-size:18px;">Our company mainly runs Pharmaceuticals, Agro-Chemicals, Veterinary and their&nbsp;Intermediates, Dye stuff, Food Additives and Plant extract.</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:18px;">&nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size:18px;">In the past 30 years, ZHECHEM has established business relationships with customers from&nbsp;more than 99 countries, and <span style="font-size:18px;">achieve</span>d great success. In 2018, the annual export turnover had been more than $444</span><span style="font-size:18px;"> Million.&nbsp;ZHECHEM has been one of the leading chemicals trading companies in China, and&nbsp;our trademark “Zhechem”&nbsp;has been granted as the “WELL-KNOWN TRADEMARK”&nbsp;of Zhejiang province.</span> 
+</p>
+<p class="MsoNormal">
+	<span style="font-size:18px;">&nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size:18px;">We aim to integrate resources, share success, share value with our friends.</span> 
+</p>
+<p>
+	<br />
+</p>
+                            </div>
+                        </div>
+                    </div>
+					<div class="en-our-products">
+                        <h2 class="en-index-title">
+                            <em>Products</em><a href="chem~2000_0260~~0~-1-.html" class="more">More&gt;&gt;</a>
+                        </h2>
+                        <div class="context clearfix">
+                            <div class="slider-box float-left">
+                                <!--大图展示-->
+                                <div id="bigpic" class="bigpic">
+                                    <div>
+										<a class="btn-prev"><i class="icons-big-prev"></i></a>
+										<a class="btn-next"><i class="icons-big-next"></i></a>
+                                        <div id="bigpicwrap" class="bigpic-wrap">
+                                        
+                                           <!-- <div class="image">
+                                                <a href="###" target="_blank">
+                                                <img alt="" src="/zjchem/st/chem/res/images/temp/slider/big01.jpg" width="772" height="434"></a>
+                                            </div>
+                                            <div class="image">
+                                                <a href="###" target="_blank">
+                                                <img alt="" src="/zjchem/st/chem/res/images/temp/slider/big01.jpg" width="772" height="434"></a>
+                                            </div>
+                                            <div class="image">
+                                                <a href="###" target="_blank">
+                                                <img alt="" src="/zjchem/st/chem/res/images/temp/slider/big01.jpg" width="772" height="434"></a>
+                                            </div>
+                                            <div class="image">
+                                                <a href="###" target="_blank">
+                                                <img alt="" src="/zjchem/st/chem/res/images/temp/slider/big01.jpg" width="772" height="434"></a>
+                                            </div>
+                                            <div class="image">
+                                                <a href="###" target="_blank">
+                                                <img alt="" src="/zjchem/st/chem/res/images/temp/slider/big01.jpg" width="772" height="434"></a>
+                                            </div>
+                                            <div class="image">
+                                                <a href="###" target="_blank">
+                                                <img alt="" src="/zjchem/st/chem/res/images/temp/slider/big01.jpg" width="772" height="434"></a>
+                                            </div>
+                                            <div class="image">
+                                                <a href="###" target="_blank">
+                                                <img alt="" src="/zjchem/st/chem/res/images/temp/slider/big01.jpg" width="772" height="434"></a>
+                                            </div>-->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--缩略图-->
+                                <div id="smallpic" class="smallthumbs">
+                                    <div id="thumbs">
+                                        <a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="thumb-prev"><i class="icons-thumbs-prev"></i></a>
+                                        <ul>
+                                            <!--<li class="selected">
+                                                <img src="/zjchem/st/chem/res/images/temp/slider/thumb01.jpg" alt="">
+                                                <i class="icons-selected"></i>
+                                            </li>
+                                            <li>
+                                                <img src="/zjchem/st/chem/res/images/temp/slider/thumb01.jpg" alt="">
+                                                <i class="icons-selected"></i>
+                                            </li>
+                                            <li>
+                                                <img src="/zjchem/st/chem/res/images/temp/slider/thumb01.jpg" alt="">
+                                                <i class="icons-selected"></i>
+                                            </li>
+                                            <li>
+                                                <img src="/zjchem/st/chem/res/images/temp/slider/thumb01.jpg" alt="">
+                                                <i class="icons-selected"></i>
+                                            </li>
+                                            <li>
+                                                <img src="/zjchem/st/chem/res/images/temp/slider/thumb01.jpg" alt="">
+                                                <i class="icons-selected"></i>
+                                            </li>
+                                            <li>
+                                                <img src="/zjchem/st/chem/res/images/temp/slider/thumb01.jpg" alt="">
+                                                <i class="icons-selected"></i>
+                                            </li>
+                                            <li>
+                                                <img src="/zjchem/st/chem/res/images/temp/slider/thumb01.jpg" alt="">
+                                                <i class="icons-selected"></i>
+                                            </li>-->
+                                        </ul>
+                                        <a href="chem~2000_0240~~0~FO_100-FO_90_20--.html###" class="thumb-next"><i class="icons-thumbs-next"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="products">
+								<ul class="clearfix">
+									<!--<li><a href="###"><img src="/zjchem/st/chem/res/images/temp/en-index-pro01.jpg" alt=""><span class="title">4-(4-Chlorophenyl)cyclohexanecarboxylic acid</span></a></li>
+									<li><a href="###"><img src="/zjchem/st/chem/res/images/temp/en-index-pro01.jpg" alt=""><span class="title">4-(4-Chlorophenyl)cyclohexanecarboxylic acid</span></a></li>
+									<li><a href="###"><img src="/zjchem/st/chem/res/images/temp/en-index-pro01.jpg" alt=""><span class="title">4-(4-Chlorophenyl)cyclohexanecarboxylic acid</span></a></li>
+									<li><a href="###"><img src="/zjchem/st/chem/res/images/temp/en-index-pro01.jpg" alt=""><span class="title">4-(4-Chlorophenyl)cyclohexanecarboxylic acid</span></a></li>
+									<li><a href="###"><img src="/zjchem/st/chem/res/images/temp/en-index-pro01.jpg" alt=""><span class="title">4-(4-Chlorophenyl)cyclohexanecarboxylic acid</span></a></li>
+									<li><a href="###"><img src="/zjchem/st/chem/res/images/temp/en-index-pro01.jpg" alt=""><span class="title">4-(4-Chlorophenyl)cyclohexanecarboxylic acid</span></a></li>-->
+								</ul>
+							</div>
+                        </div>
+                    </div>
+                    <!-- 联系我们 -->
+				    <div class="en-about-us en-contacts-wrap">
+                        <h2 class="en-index-title">
+                            <em>Contacts</em>
+                        </h2>
+                        <div class="context clearfix en-contacts">
+                            <img src="../../st/chem/res/images/bg/contacts-en.jpg" alt="" class="float-left">
+                            <div class="text">
+		                                <h5>CONTACTS US</h5>
+		                                <p class="dress-en">
+	Correspondence address :17F,T1-A Building,Xizi International Center(XIC),Qingchun-dong Road,<br />
+Hangzhou,Zhejiang,China
+</p>
+<p>
+	Postal Code : 310020
+</p> 
+<p>
+	E-mail :  stanley.liu@zhejiangchemicals.com
+</p>
+<p>
+	Web : www.zhejiangchemicals.com
+</p>
+<br />
+<p>
+	<br />
+</p>
+<br />
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				
+				<!-- 尾部 -->
+<!-- 尾部 -->
+			    <div class="layout g-footer en">
+					<div class="container text-center footer-links">
+						<ul class="hidden-l clearfix">
+							<li>
+								<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html">Home</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0260~~0~-1-.html">Product Categories </a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0270~~0~FO_90--.html">Company Profile</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0280~~0~FO_100--.html">Contacts</a>
+							</li>
+							
+						</ul>
+						<p class="hidden-l">Copyright &copy;2020,Zhejiang Chemicals Import & Export Corporation All Rights Reserved.<br />Supported by ChemNet ChinaChemNet Toocle<span>浙ICP备09087408号</span></p>
+						<p class="footer-mobi">浙江省化工进出口有限公司 版权所有&copy;2016</p>
+					</div>
+				</div>  
+			</div>
+		     
+		</div>
+		<!--登录弹出框-->
+			<div class="login-cover">
+				<div class="login-cover-s">
+					<p>登陆~~请选择pc端进行登录</p>
+					<button>知道了</button>
+				</div>
+			</div>
+		<!--登录弹出框end-->
+		<script type="text/javascript">
+			
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+		</script>				
+				
+		     
+		</div>
+				
+		<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+		<!--联系方式-->
+<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+<div class="contact-way hidden-l">
+			<div class="item item-ewm"><i class="icons-ewm"></i><div class="ewm"><i class="arrowborder"></i><i class="shadowarrow"></i><img style="width:120px;height:120px" src="../../st/chem/res/images/temp/ewm.png"/></div></div>
+			<!--<div class="item item-qq" onclick="openQQ()"><div class="info"><h5 class="zh">在线服务咨询</h5><h6 class="en">ONLINE CONSULTION</h6></div><i class="icons-qq"></i></div>-->
+			<!--<div class="item"><i class="icons-email"></i></div>-->
+			<div class="item item-gotop"><i class="icons-top"></i></div>
+</div>
+
+<script type="text/javascript">
+	var getqq="/zjchem/do/chem/chem~~chem_openQQ~0010~0.do";
+	function openQQ(){
+	
+		$.ajax({
+			type:"POST",
+			async:false,
+			url:getqq,
+			data:{
+				
+			},
+			success:function(data,textStatus){
+					if(data.uqq!=""){
+						var url="tencent://message/?uin="+data.uqq+"&Site=qq&Menu=yes";
+						window.location.href=url;
+					}else{
+						//alert("暂未提供客服QQ,请拨打融易通客服热线：");
+					}
+			},
+			dataType:"json" 
+			});
+	}
+</script>		<!--联系方式 end-->
+		<!--登录弹出框-->
+			<div class="login-cover">
+				<div class="login-cover-s">
+					<p>登陆~~请选择pc端进行登录</p>
+					<button>知道了</button>
+				</div>
+			</div>
+		<!--登录弹出框end-->
+		<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../st/chem/js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../st/chem/js/jquery.event.swipe.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../st/chem/js/slide.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//轮播图
+			$(function() {
+				var slidey = $('.lager-banner').unslider({
+					speed: 500,
+					delay: 3000,
+					autoplay: true,
+					keys: false,
+					arrows: false,
+					infinite: true,
+					fluid: false
+				});
+				var data1=slidey.eq(0).data('unslider');
+				var data2 = slidey.eq(1).data('unslider');
+				$("#banner").on("mouseenter", function() {
+					data1.stop();
+				}).on("mouseleave", function() {
+					data1.start();
+				});
+				$("#banner2").on("touchstart", function(e) {
+					e.preventDefault();
+					data2.stop();
+				}).on("touchmove", function(e) {
+					e.preventDefault();
+				}).on("swipeleft", function(e) {
+					if(!$(".unslider-wrap").is(":animated")) {
+						data2.next();
+					}
+				}).on("swiperight", function(e) {
+					if(!$(".unslider-wrap").is(":animated")) {
+						data2.prev();
+					}
+				}).on("touchend", function() {
+					data2.start();
+				});
+			});
+			showMenu();//手机页面显示导航
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			$(window).on("touchstart",function(){});//iOS激活:active状态
+			
+		</script>
+	</body>
+</html>  

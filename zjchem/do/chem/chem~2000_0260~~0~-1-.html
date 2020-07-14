@@ -1,0 +1,826 @@
+	<!DOCTYPE HTML>
+	<html lang="zh-cn">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="shortcut icon" href="../../st/chem/res/favicon.ico" type="image/x-icon">
+		<title>英文商品列表展示页</title>
+	<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/unslider-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/jquery.event.swipe.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-base_v1.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/sn-core_v2.0.js" ></script>
+	<script type="text/javascript" src="../../st/chem/js/trade/account.js"></script>
+	<!--[if lt IE 9]>
+			<script src="/zjchem/st/chem/js/respond.js"></script>
+		<![endif]-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name = "format-detection" content = "telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Product Online</title>
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/introduce.css"/>
+		<link rel="stylesheet" type="text/css" href="../../st/chem/css/products.css"/>
+		<!--[if lt IE 9]>
+			<script src="js/respond.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+		<!--头部-->
+<!--头部-->
+			<div class="layout bg-gray header-top hidden-l">
+				<div class="container">
+					<div class="float-right other-link">
+						<a href="../../st/chem/0E/17/5E/chem~2000_0010~~0~UC_10-UC_20-FO_30_10.html" class="text-gray">Chinese</a>
+					</div>
+					<div class="float-left">
+						<p class="welcome text-gray"><span>Welcome to Zhejiang Chemical Import & Export Co., Ltd.</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--logo区-->
+			<div class="layout padding-top padding-small-bottom boxshadow en">
+				<div class="container header-wrap">
+					<div class="line padding-small-top padding-small-bottom hidden-l">
+						<div class="telphone float-right">
+							<!--<i class="icons-tel"></i><span>0571-967209</span>-->
+						</div>
+						<div class="m-search float-right clearfix margin-little-top">
+							<div class="search">
+								<input type="text" id="searchInput"  placeholder="Search Order code  here" class="search-text">
+							</div>
+							<button class="submit"  name="submit" onclick="search()"><i class="icons-search"></i></button>
+						</div>
+						<div class="logo logo-en float-left">
+							<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html" class="logo-bg" title="浙江省化工进出口有限公司"></a>
+						</div>
+						
+					</div>
+					<div class="header-mob hidden-m hidden-b hidden-s show-l">
+						<div class="leftmenu"><i class="icons-menu"></i></div>
+						<div class="title"><img src="../../st/chem/res/images/logo-mini.png" alt="" /></div>
+					</div>
+					<div class="fixedmenu clearfix en">
+						<div class="nav absolute">
+							<ul class="text-center">
+								<li >
+									<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html">Home</a>
+								</li>
+								<li  class="about curs">
+									<a style="cursor:pointer;" onClick="productOnLine()">Product Categories</a>
+								</li>
+								
+								<li >
+									<a href="chem~2000_0270~~0~FO_90--.html">About US</a>
+								</li>
+								<li  class="about">
+									<a href="chem~2000_0280~~0~FO_100--.html">Contacts</a>
+								</li>
+								<li class="join">
+									<a href="chem~3000_0010~~0~ZC_10.html">Register</a>
+								</li>
+								<li class="login">
+									<a href="chem~3000_0020~~0.html">Login</a>
+								</li>
+							</ul>
+						</div>
+						<div class="mask-layer"></div>
+					</div>
+				</div>
+			</div>
+			
+			<script>
+				function productOnLine(){
+					clearCookie("engproName");
+					clearCookie("engocpath");
+					var prohref="/zjchem/do/chem/chem~2000_0260~~0~-1-.html";
+					window.location.href=encodeURI(prohref);
+				}
+				
+				//清除cookie    
+				function clearCookie(name) {    
+				    setCookie(name, "", -1);    
+				}  
+				
+				//设置cookie
+				function setCookie(c_name,value,expiredays){
+					var exdate=new Date()
+					exdate.setDate(exdate.getDate()+expiredays)
+					document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+				}
+				
+			
+				function search(){
+					var value=$("#searchInput").val();
+					var searchPage="/zjchem/do/chem/chem~2000_0290~~0~"+value+".html";
+					if(value!=""){
+						window.location.href=encodeURI(searchPage);
+						}
+					}
+			
+			</script>
+			<!--banner-->
+		<div class="content-home">
+			<div class="intr-wrap no-padding">
+				<!--面包屑-->
+				<div class="m-crumbs hidden-l">
+					<a href="chem~2000_0260~~0~-1-.html###">Home </a><span> &gt; </span><span>Product Categories</span>
+				</div>
+				<!--产品在线-->
+				<div class="line products-online products-english">
+					<div class="side-menu float-left hidden-l">
+						<h4 class="menu-tt">
+							<i class="icons-product"></i>
+							<span>Product Categories</span>
+						</h4>
+						<ul class="menu-list">
+								<li><a id="SPLM201905240012" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240013" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240010" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240011" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240001" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240009" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240006" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240007" onClick="ordClick(this)"> </a></li>
+								<li><a id="SPLM201905240008" onClick="ordClick(this)"> </a></li>
+						</ul>
+						<div class="menu-detail">
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240012.SPLM201905240037" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240012.SPLM201905240038" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+								</div>
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270022" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905270022.SPLM201905270023" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270022.SPLM201905270024" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270022.SPLM201905270025" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270029" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270026" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905270026.SPLM201905270028" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270026.SPLM201905270027" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905240043" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905240043.SPLM201905270001" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905240043.SPLM201905270004" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905240043.SPLM201905270002" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905240043.SPLM201905270003" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905240044" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905240044.SPLM201905270006" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905240044.SPLM201905270007" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905240044.SPLM201905270005" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905240039" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905240039.SPLM201905240040" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905240039.SPLM201905240041" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905240039.SPLM201905240042" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270008" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270009" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270010" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905270010.SPLM201905270011" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270010.SPLM201905270012" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270010.SPLM201905270013" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270010.SPLM201905270014" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270018" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905270018.SPLM201905270020" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270018.SPLM201905270021" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270018.SPLM201905270019" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240013.SPLM201905270015" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+																<a id="SPLM201905240013.SPLM201905270015.SPLM201905270017" onClick="ordClick(this)"> </a>
+																<a id="SPLM201905240013.SPLM201905270015.SPLM201905270016" onClick="ordClick(this)"> </a>
+													</div>
+												</dd>
+											</dl>
+								</div>
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240010.SPLM201905240035" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240010.SPLM201905240036" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+								</div>
+								<div class="detail-cont">
+								</div>
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240001.SPLM201905240002" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240001.SPLM201905240003" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240001.SPLM201905240004" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240001.SPLM201905240005" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+								</div>
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240009.SPLM201905240034" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240009.SPLM201905240031" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240009.SPLM201905240032" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240009.SPLM201905240033" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+								</div>
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240006.SPLM201905240014" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240006.SPLM201905240015" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240006.SPLM201905240016" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240006.SPLM201905240017" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240006.SPLM201905240018" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240006.SPLM201905240019" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240006.SPLM201905240020" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+								</div>
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240007.SPLM201905240023" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240007.SPLM201905240024" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240007.SPLM201905240021" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240007.SPLM201905240022" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+								</div>
+								<div class="detail-cont">
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240008.SPLM201905240030" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240008.SPLM201905240025" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240008.SPLM201905240026" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240008.SPLM201905240027" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240008.SPLM201905240028" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+											<dl class="clearfix">
+												<dt><a id="SPLM201905240008.SPLM201905240029" onClick="ordClick(this)"> </a><i class="icons-arr-right"></i></dt>
+												<dd>
+													<div class="">
+													</div>
+												</dd>
+											</dl>
+								</div>
+						</div>
+					</div>
+					<div class="context bg-context english">
+						<div class="mob-side-menu hidden-s hidden-m hidden-b">
+							<div class="clearfix current hidden-l">
+								<h4 class="title float-left">
+									<i></i>
+									<span>产品分类</span>
+								</h4>
+								<div class="float-right cur"><span>纺织皮革制品</span><i class="icons-marrowdown"></i><i class="icons-marrowup"></i></div>
+							</div>
+							<div class="clearfix current">
+								<h4 class="title float-left">
+									<div class="zh hidden-l">产品展示</div>
+									<div class="en">Products</div>
+								</h4>
+								<div class="float-right cur"><span>All</span><i class="icons-marrowdown"></i><i class="icons-marrowup"></i></div>
+							</div>
+							<ul class="othermenu">
+									<li><a id="SPLM201905240012" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240013" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240010" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240011" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240001" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240009" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240006" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240007" onClick="ordClick(this)"> </a></li>
+									<li><a id="SPLM201905240008" onClick="ordClick(this)"> </a></li>
+							</ul>
+						</div><div class="layout">
+						<div class="menu-masker"></div>	
+							<div class="detail-lists">
+								<div class="list-search hidden-l">
+									<div class="m-search float-right clearfix">
+										<div class="search">
+											<input id="searchProductInput" type="text" placeholder="Search productes here" class="search-text">
+										</div>
+										<button class="submit" id="submit" name="submit" onclick="searchProduct()"><i class="icons-search"></i></button>
+									</div>
+								</div>
+								<div class="lists-cont">
+									<ul class="clearfix">
+											<li>
+												<div id="SP201907110001" class="cont-wrap" onClick="proClick(this)">
+													<div class="cont-img half-pixel">
+														<img src="../../st/chem/res/images/bg/product-mini-01.jpg" width="218" height="218"  class="hidden-l"/>
+														<img src="../../st/chem/res/images/bg/product-mini-01.jpg" width="136" height="136" class="hidden-s hidden-m hidden-b"/>
+													</div>
+													<div class="cont-tt">
+														<a  href="chem~2000_0220~~0~SP201907110001.html" class="clamp">32jdeadasdsa</a>
+													</div>
+												</div>
+											</li>
+										
+									</ul>
+								</div>
+								<div class="pages hidden-l">
+	
+	
+	
+	
+	<div class="goto float-right">
+		到第<input id="skipPageNum" type="text" class="inputs"/>页 <input id="skip_page_btn" onclick="skipPage()" type="button" value="确定" class="submit"/>
+	</div>
+	<div class="total">共<em>1</em>页</div>
+	<ul class="clearfix">
+		<li class="prev"><a href="javascript:void(0)" onclick="lastPage()"><i class="icons-arr-l"></i></a></li>
+		
+			
+					<li class="cur"><a href="javascript:void(0)" onclick="clickPage(this)">1</a></li>
+		
+		
+		<li class="next"><a href="javascript:void(0)" onclick="nextPage()"><i class="icons-arr-r"></i></a></li>
+		
+	</div>
+	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		    <!-- 尾部 -->
+<!-- 尾部 -->
+			    <div class="layout g-footer en">
+					<div class="container text-center footer-links">
+						<ul class="hidden-l clearfix">
+							<li>
+								<a href="chem~2000_0240~~0~FO_100-FO_90_20--.html">Home</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0260~~0~-1-.html">Product Categories </a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0270~~0~FO_90--.html">Company Profile</a>
+								<span>|</span>
+							</li>
+							<li>
+								<a href="chem~2000_0280~~0~FO_100--.html">Contacts</a>
+							</li>
+							
+						</ul>
+						<p class="hidden-l">Copyright &copy;2016,Zhejiang Chemicals Import & Export Corporation All Rights Reserved.<br />Supported by ChemNet ChinaChemNet Toocle<span>浙ICP备09087408号</span></p>
+						<p class="footer-mobi">浙江省化工进出口有限公司 版权所有&copy;2016</p>
+					</div>
+				</div>  
+			</div>
+		     
+		</div>
+		<!--登录弹出框-->
+			<div class="login-cover">
+				<div class="login-cover-s">
+					<p>登陆~~请选择pc端进行登录</p>
+					<button>知道了</button>
+				</div>
+			</div>
+		<!--登录弹出框end-->
+		<script type="text/javascript">
+			
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			function loginPop(){
+				var $login=$(".login-cover");
+				$(".login").click(function(){
+					$login.show();
+				})
+				$(".login-cover-s button").click(function(){
+					$login.hide();
+				})
+			}
+		</script>		<!--手机端返回顶部-->
+		<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div> 
+		<!--联系方式-->
+<div class="m-gotop" title="回顶部"><i class="icons-gotop"></i></div>
+<div class="contact-way hidden-l">
+			<div class="item item-ewm"><i class="icons-ewm"></i><div class="ewm"><i class="arrowborder"></i><i class="shadowarrow"></i><img style="width:120px;height:120px" src="../../st/chem/res/images/temp/ewm.png"/></div></div>
+			<!--<div class="item item-qq" onclick="openQQ()"><div class="info"><h5 class="zh">在线服务咨询</h5><h6 class="en">ONLINE CONSULTION</h6></div><i class="icons-qq"></i></div>-->
+			<!--<div class="item"><i class="icons-email"></i></div>-->
+			<div class="item item-gotop"><i class="icons-top"></i></div>
+</div>
+
+<script type="text/javascript">
+	var getqq="/zjchem/do/chem/chem~~chem_openQQ~0010~0.do";
+	function openQQ(){
+	
+		$.ajax({
+			type:"POST",
+			async:false,
+			url:getqq,
+			data:{
+				
+			},
+			success:function(data,textStatus){
+					if(data.uqq!=""){
+						var url="tencent://message/?uin="+data.uqq+"&Site=qq&Menu=yes";
+						window.location.href=url;
+					}else{
+						//alert("暂未提供客服QQ,请拨打融易通客服热线：");
+					}
+			},
+			dataType:"json" 
+			});
+	}
+</script>		<!--联系方式 end-->
+		<!--手机端登录提示弹出框-->
+		<div class="login-cover">
+			<div class="login-cover-s">
+				<p>登陆~~请选择pc端进行登录</p>
+				<button>知道了</button>
+			</div>
+		</div>
+		</div>
+		<script src="../../st/chem/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../st/chem/js/unslider-min.js"     type="text/javascript" charset="utf-8"></script>
+		<script src="../../st/chem/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../st/chem/js/jquery.base64.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(window).on("touchstart",function(){});//iOS激活:active状态
+			showMenu();//手机页面显示导航
+			goTop();//手机页面返回顶部
+			goTopPC();//PC页面返回顶部
+			loginPop();//手机页面点击登录出现提示框
+			showSubMenu()//二级页面的导航
+			detailsTabChange()//切换内容
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				var l;
+				var timer;
+				var menuItem;
+				menu(); //执行展开二级菜单函
+			})
+			var menu = function() {
+				menuItem = $(".menu-list li"); //选择导航列表
+				menuItem.each(function() {
+					$(this).mouseenter(function() {
+						l = $(this); //获取当前鼠标滑过的li
+						var idx=l.index();//获取当前选择菜单列表的索引
+						console.log(idx)
+						timer = setTimeout(function() {
+							//var y =l.position() + 1; 
+							$(".menu-detail").show();
+							//$(".menu-detail").css("top", y); //获取当前鼠标滑过的列表的顶部坐标
+							l.addClass("current").siblings().removeClass("current");
+							$(".menu-detail>div").eq(idx).show().siblings().hide();//需要显示的对应索引内容
+						}, 30)
+					});
+				}); /*导航菜单菜单*/
+				menuItem.mouseleave(function() {
+						clearTimeout(timer);
+				}); /*导航菜单菜单*/
+				$(".side-menu").mouseleave(function() {
+					$(".menu-detail").hide();
+					menuItem.removeClass("current");
+				});
+			} //展开二级菜单 
+			
+			//根据当前页面数控制【上一页】和【下一页】样式
+			var total = parseInt($(".total").find("em").text()); 
+			var curPage = parseInt($(".cur").find("a").text()); 
+			if(curPage == 1){
+				$(".prev").find("a").removeAttr("onclick");
+				//$(".prev").hide();
+			}
+			//else{
+			//	$(".prev").show();
+			//}
+			if(curPage == total){
+				$(".next").find("a").removeAttr("onclick");
+				//$(".next").hide();
+			}
+			//else{
+			//	$(".next").show();
+			//}
+			
+			//跳转到指定页
+			function skipPage(){
+				var proName = getCookie("engproName");
+				var ocpath = getCookie("engocpath");
+				proName = $.base64.btoa(proName);
+				ocpath = $.base64.btoa(ocpath);
+				skipPageNum = $("#skipPageNum").val();
+				var reg = /^-?([1-9]\d*|0(?!\.0+$))\.\d+?$/;
+				if(skipPageNum > total){
+					skipPageNum = total;
+				}else if(skipPageNum<1){
+					skipPageNum = 1;
+				}else if(reg.test(skipPageNum)){
+					return;
+				}else if(skipPageNum == "" || skipPageNum == null){
+					return;
+				}
+				var searchPage="/zjchem/do/chem/chem~2000_0260~~0~"+ocpath+"-"+skipPageNum+"-"+proName+".html";
+				window.location.href=encodeURI(searchPage);
+			}
+			
+			//点击指定页
+			function clickPage(e){
+				var proName = getCookie("engproName");
+				var ocpath = getCookie("engocpath");
+				proName = $.base64.btoa(proName);
+				ocpath = $.base64.btoa(ocpath);
+				skipPageNum = $(e).text();
+				var searchPage="/zjchem/do/chem/chem~2000_0260~~0~"+ocpath+"-"+skipPageNum+"-"+proName+".html";
+				window.location.href=encodeURI(searchPage);
+			}
+			
+			//上一页
+			function lastPage(){
+				var proName = getCookie("engproName");
+				var ocpath = getCookie("engocpath");
+				proName = $.base64.btoa(proName);
+				ocpath = $.base64.btoa(ocpath);
+				skipPageNum = curPage-1;
+				var searchPage="/zjchem/do/chem/chem~2000_0260~~0~"+ocpath+"-"+skipPageNum+"-"+proName+".html";
+				window.location.href=encodeURI(searchPage);
+			}
+			
+			//下一页
+			function nextPage(){
+				var proName = getCookie("engproName");
+				var ocpath = getCookie("engocpath");
+				proName = $.base64.btoa(proName);
+				ocpath = $.base64.btoa(ocpath);
+				skipPageNum = curPage+1;
+				var searchPage="/zjchem/do/chem/chem~2000_0260~~0~"+ocpath+"-"+skipPageNum+"-"+proName+".html";
+				window.location.href=encodeURI(searchPage);
+			}
+			
+			//根据商品名字进行模糊查询
+			function searchProduct(){	
+				setCookie("engocpath","",-1);			
+				var value=$("#searchProductInput").val();
+				if(value!=undefined && value!="" && value!=null){
+					setCookie("engproName",value,365);
+					//转码
+					value = encodeURI(value);
+					//加密
+					value = $.base64.btoa(value);
+					var searchPage="/zjchem/do/chem/chem~2000_0260~~0~-1-"+value+".html";
+					window.location.href=encodeURI(searchPage);
+				}
+			}
+			
+			
+			//商品类目按钮点击事件
+			function ordClick(e){
+				setCookie("engproName","",-1);
+				var ocpath = e.id;
+				setCookie("engocpath",ocpath,365);
+				//加密
+				ocpath = $.base64.btoa(ocpath);
+				var locationHref = "/zjchem/do/chem/chem~2000_0260~~0~"+ocpath+"-1-.html";
+				window.location.href=encodeURI(locationHref);
+			}
+			
+			
+			//获取cookie
+			function getCookie(c_name){
+				if (document.cookie.length>0){
+					c_start=document.cookie.indexOf(c_name + "=")
+					if (c_start!=-1){
+						c_start=c_start + c_name.length+1
+						c_end=document.cookie.indexOf(";",c_start)
+						if (c_end==-1) c_end=document.cookie.length
+						return unescape(document.cookie.substring(c_start,c_end))
+					}
+				}
+				return ""
+			}
+			
+			//设置cookie
+			function setCookie(c_name,value,expiredays){
+				var exdate=new Date()
+				exdate.setDate(exdate.getDate()+expiredays)
+				document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+			}
+			
+			//商品点击事件
+			function proClick(e){
+				var ogicode = e.id;
+				var locationHref = "/zjchem/do/chem/chem~2000_0250~~0~"+ogicode+".html";				
+				window.location.href=encodeURI(locationHref);
+			}
+		</script>
+	</body>
+</html>
